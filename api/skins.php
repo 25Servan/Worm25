@@ -7441,6 +7441,13 @@
             "en": "EFFENDI"
         },
         "list": ["1222", "1223", "1224", "1225", "1226", "1228", "1230", "1231", "1232", "1233", "1235", "1236"]
+    },{
+        "isCustom": true,
+        "id": "25 YPG",
+        "name": {
+            "en": "25 YPG"
+        },
+        "list": ["1000"]
     }, {
         "isCustom": true,
         "id": "25 YPG",
@@ -7585,7 +7592,7 @@
         },
         "lsb_01": {
             "custom": true,
-            "relativePath": "https:\/\/i.imgur.com\/yqLzg14.png"
+            "relativePath": "https://i.imgur.com/dpzgQec.png"
         },
         "lsb_02": {
             "custom": true,
