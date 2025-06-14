@@ -39,7 +39,6 @@
             "Client_VisibleSkin9": "0000",
             "Client_VisibleSkin10": "0000"
         },
-        {
 
     ],
     "timestamp": 1749885996,
