@@ -3427,7 +3427,7 @@
         "priceBefore": 0,
         "prime": "c__yllw",
         "base": ["lsb_02_8", "lsb_02_7", "lsb_02_6", "lsb_02_5", "lsb_02_4", "lsb_02_3", "lsb_02_2", "lsb_02_1", "lsb_02_0"],
-        "glow": ["a__emer", "a__emer", "a__emer", "a__emer", "a_trans", "a_trans", "a_trans", "a_trans", "a__emer"]
+        "glow": ["a_white", "a_white", "a_white", "a_white", "a_white", "a_white", "a_white", "a_white", "a_white"]
     }, {
         "id": 1002,
         "guest": false,
@@ -7445,9 +7445,9 @@
         "isCustom": true,
         "id": "25 YPG",
         "name": {
-            "en": "25 YPG"
+            "en": "25 YT"
         },
-        "list": ["1000"]
+        "list": ["1000", "1001"]
     }, {
         "isCustom": true,
         "id": "25 YPG",
@@ -7596,7 +7596,7 @@
         },
         "lsb_02": {
             "custom": true,
-            "relativePath": "https:\/\/i.imgur.com\/c90bnxu.png"
+            "relativePath": "https://i.imgur.com/FwYhTAH.png"
         },
         "lsb_03": {
             "custom": true,
