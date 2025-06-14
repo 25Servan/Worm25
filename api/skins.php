@@ -7394,7 +7394,7 @@
     }, {
         "id": 1270,
         "createdAt": "2025-06-13 19:55:30",
-        "expiresAt": "2025-06-16 19:55:30",
+        "expiresAt": "2046-06-16 19:55:30",
         "guest": false,
         "nonbuyable": false,
         "price": 0,
@@ -7447,7 +7447,7 @@
         "name": {
             "en": "25 YT"
         },
-        "list": ["1000", "1001"]
+        "list": ["1000", "1001", "1270", "1337", "1339",]
     }, {
         "isCustom": true,
         "id": "25 YPG",
@@ -10552,7 +10552,7 @@
             "custom": true,
             "relativePath": "https:\/\/i.imgur.com\/3NTZPMv.png",
             "createdAt": "2025-06-13 19:55:30",
-            "expiresAt": "2025-06-16 19:55:30"
+            "expiresAt": "2046-06-16 19:55:30"
         },
         "star_308": {
             "custom": true,
