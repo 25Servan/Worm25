@@ -3596,9 +3596,42 @@ body {font-family: vuonghiep; }
   font-size:24px;
 }
 
+div#final-replay {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    background-color: #a44ac3;
+    color: #fff;
+    line-height: 50px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+    text-align: center;
+    text-shadow: 0 0 1px #000;
+}
+
 #game-wrap #game-cont #results-view #congrats-bg #congrats-wrap #congrats .controls #final-continue {
   position:absolute;
   top:0;
+  left:15px;
+  right:15px;
+  background-color:#8bc34a;
+  color:#fff;
+  overflow:hidden;
+  height:50px;
+  line-height:50px;
+  font-size:24px;
+  padding:0 10px;
+  box-sizing:border-box;
+  border-radius:5px;
+  border:0;
+  outline:0;
+  box-shadow:0 1px 1px 0 rgba(0,0,0,.2);
+  text-align:center;
+  text-shadow:0 0 1px #000;
+  cursor:pointer;
+  transition:background-color .5s ease;
+  position: absolute;
+  margin-top:65px;
   left:15px;
   right:15px;
   background-color:#8bc34a;
