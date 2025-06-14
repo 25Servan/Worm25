@@ -1129,6 +1129,12 @@ body {font-family: vuonghiep; }
   vertical-align:middle;
 }
 
+div#default-cursor-btn {
+    margin-left: 60px;
+}
+
+img.img {}
+
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-bottom .mm-merchant-cont {
   position:absolute;
   top:10px;
@@ -4551,7 +4557,6 @@ width: 40px;
     height: 471px;
     font-size: 15px;
     box-shadow: 0px 3px 20px 5px #a655cd !important;
-    
 }
 
 .close-button {
@@ -4623,7 +4628,12 @@ width: 40px;
         table, th, td {
             border: 1px solid #ccc;
             text-align: center;
+            margin-top: 80px;
         }
+
+td {
+    /* margin-top: 35px; */
+}
 
         th {
             background-color: #007bff;
