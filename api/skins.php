@@ -7592,7 +7592,7 @@
         },
         "lsb_01": {
             "custom": true,
-            "relativePath": "https://i.hizliresim.com/qtkys9b.jpg"
+            "relativePath": "https://i.imgur.com/cyzCP2w.png"
         },
         "lsb_02": {
             "custom": true,
