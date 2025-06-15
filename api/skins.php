@@ -7600,7 +7600,7 @@
         },
         "lsb_03": {
             "custom": true,
-            "relativePath": "https://i.imgur.com/hf15wvf.png"
+            "relativePath": "https://i.imgur.com/9G067Rz.png"
         },
         "lsb_04": {
             "custom": true,
