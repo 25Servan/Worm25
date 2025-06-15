@@ -98,7 +98,7 @@
         },
         {
               "id": 6,
-              "cliente_NOMBRE": "DIYO",
+              "cliente_NOMBRE": "Kurdo",
               "cliente_ID": "gg_103523998727274060964",
               "Client_KeyAccecs": "XTPRIVATESKIN",
               "cliente_DateExpired": "2025-07-30",
