@@ -57,6 +57,25 @@
               "Client_VisibleSkin8": "0000",
               "Client_VisibleSkin9": "0000",
               "Client_VisibleSkin10": "0000"
+        },
+        {
+              "id": 4,
+              "cliente_NOMBRE": "AHMED",
+              "cliente_ID": "gg_108877917590282595586",
+              "Client_KeyAccecs": "XTPRIVATESKIN",
+              "cliente_DateExpired": "2025-09-01",
+              "status": 1,
+              "Client_VisibleSkin": "0000",
+              "Client_VisibleSkin1": "0000",
+              "Client_VisibleSkin2": "0000",
+              "Client_VisibleSkin3": "0000",
+              "Client_VisibleSkin4": "0000",
+              "Client_VisibleSkin5": "0000",
+              "Client_VisibleSkin6": "0000",
+              "Client_VisibleSkin7": "0000",
+              "Client_VisibleSkin8": "0000",
+              "Client_VisibleSkin9": "0000",
+              "Client_VisibleSkin10": "0000"
         }
         
         
