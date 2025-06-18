@@ -3422,12 +3422,12 @@
     }, {
         "id": 1001,
         "guest": false,
-        "nonbuyable": false,
+        "nonbuyable": true,
         "price": 0,
         "priceBefore": 0,
         "prime": "c__yllw",
         "base": ["lsb_02_8", "lsb_02_7", "lsb_02_6", "lsb_02_5", "lsb_02_4", "lsb_02_3", "lsb_02_2", "lsb_02_1", "lsb_02_0"],
-        "glow": ["a__emer", "a__emer", "a__emer", "a__emer", "a_trans", "a_trans", "a_trans", "a_trans", "a__emer"]
+        "glow": ["a_white","a_white","a_white","a_white","a_white","a_white","a_white","a_white","a_white"]
     }, {
         "id": 1002,
         "guest": false,
@@ -7545,11 +7545,11 @@
         },
         "lsb_01": {
             "custom": true,
-            "relativePath": "https://i.imgur.com/zmuKy1K.png"
+            "relativePath": "https://25servan.github.io/Worm25/images/skins_team/team_25yt/25yt_01.png"
         },
         "lsb_02": {
             "custom": true,
-            "relativePath": "https:\/\/i.imgur.com\/c90bnxu.png"
+            "relativePath": "https://25servan.github.io/Worm25/images/skins_team/team_25yt/25yt_02.png"
         },
         "lsb_03": {
             "custom": true,
