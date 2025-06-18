@@ -2666,7 +2666,7 @@ window.addEventListener("load", function () {
             audioElement.preload = "auto";
             audioElement.play();
           }
-          var newParticleEffect = createParticleEffect(localizeMessage("index.game.floating.headshot") + "✌️", true);
+          var newParticleEffect = createParticleEffect(localizeMessage("index.game.floating.headshot") + "🦊", true);
           this.addChild(newParticleEffect);
           this.Pe.push(newParticleEffect);
           if (newParticleEffect) {
@@ -2676,7 +2676,7 @@ window.addEventListener("load", function () {
             }, 3000);
           }
         } else {
-          var newParticleEffect = createParticleEffect(localizeMessage("index.game.floating.wellDone") + "💪", false);
+          var newParticleEffect = createParticleEffect(localizeMessage("index.game.floating.wellDone") + "⚡", false);
           this.addChild(newParticleEffect);
           this.Pe.push(newParticleEffect);
           if (newParticleEffect) {
@@ -4692,7 +4692,7 @@ window.addEventListener("load", function () {
             if (response && response.code === 1485 && response.error === "expired_token") {
               attempts++;
               console.log("auto login attempt:", attempts);
-              $("#login-view").html("<h2>Auto Login Google Worm 25  : " + attempts + "</h2>");
+              $("#login-view").html("<h2>Auto Login Google Worm25 Connect : " + attempts + "</h2>");
               fetchNewToken();
             } else {
               handleLoginResponse(response);
@@ -4709,7 +4709,7 @@ window.addEventListener("load", function () {
             if (response && response.code === 1485 && response.error === "expired_token") {
               attempts++;
               console.log("auto login attempt:", attempts);
-              $("#login-view").html("<h2>Auto Login Google Worm 25 : " + attempts + "</h2>");
+              $("#login-view").html("<h2>Auto Login Google Worm25 Connect : " + attempts + "</h2>");
               fetchNewToken();
             } else {
               handleLoginResponse(response);
@@ -7827,82 +7827,6 @@ window.addEventListener("load", function () {
         <input type="button" value="RESPAWN" id="hoisinh" class="fullscreen_respawn">
     </div>
 `);
-      $(".mm-merchant-cont").html(`
-    <marquee behavior="scroll" direction="left" width="340" height="48">
-<img src="https://i.imgur.com/5CvpJxv.jpeg" width="100" height="46" alt="SRTquasim">
-<img src="https://i.imgur.com/RA8d1Gh.jpeg" width="100" height="46" alt="SRTseka">
-<img src="https://i.imgur.com/iqU3Mv1.png" width="100" height="46" alt="Matador">
-<img src="https://i.imgur.com/lpgyZMV.png" width="100" height="46" alt="KRDNZ">
-<img src="https://i.imgur.com/hucqg0r.jpeg" width="100" height="46" alt="Romeo">
-<img src="https://i.imgur.com/tGP5rhl.jpeg" width="100" height="46" alt="SRT08">
-<img src="https://i.imgur.com/BChT8Hq.jpeg" width="100" height="46" alt="Gezegen">
-<img src="https://i.imgur.com/U0GF8qd.jpeg" width="100" height="46" alt="Gezegen">
-<img src="https://i.imgur.com/7e3NZpM.png" width="100" height="46" alt="Gezegen">
-<img src="https://i.imgur.com/hLlWl7c.png" width="100" height="46" alt="CANER">
-<img src="https://i.imgur.com/mijhbSW.png" width="100" height="46" alt="KRDNZ">
-<img src="https://i.imgur.com/5glC8Xt.jpeg" width="100" height="46" alt="SRT07">
-<img src="https://i.imgur.com/jrHPnyc.jpeg" width="100" height="46" alt="SRT06">
-<img src="https://i.imgur.com/sFKzrl9.png" width="100" height="46" alt="Emre01">
-<img src="https://i.imgur.com/KxbHT8o.jpeg" width="100" height="46" alt="SRT01">
-<img src="https://i.imgur.com/CzSV3pF.jpeg" width="100" height="46" alt="SRT02">
-<img src="https://i.imgur.com/f2LSpvF.jpeg" width="100" height="46" alt="SRT03">
-<img src="https://i.imgur.com/gugQPYZ.jpeg" width="100" height="46" alt="SRT04">
-<img src="https://i.imgur.com/EVGUyIG.jpeg" width="100" height="46" alt="SRT05">
-<img src="https://i.imgur.com/sRSiMyp.png" width="100" height="46" alt="Engin01">
-<img src="https://i.imgur.com/C5fcNjq.png" width="100" height="46" alt="Atika01">
-<img src="https://i.imgur.com/iDZZxxJ.png" width="100" height="46" alt="Atika02">
-<img src="https://i.imgur.com/WpOX4Ye.png" width="100" height="46" alt="Atika03">
-<img src="https://i.imgur.com/moUPMMS.png" width="100" height="46" alt="Engin02">
-<img src="https://i.imgur.com/qy3vzY7.png" width="100" height="46" alt="Joker01">
-<img src="https://i.imgur.com/Mds0axY.png" width="100" height="46" alt="Joker02">
-<img src="https://i.imgur.com/axpF67i.jpeg" width="100" height="46" alt="Uslanbedeli">
-<img src="https://i.imgur.com/hEm0eKM.png" width="100" height="46" alt="Arzu.Gaming">
-<img src="https://i.imgur.com/4ggEGR2.png" width="100" height="46" alt="KRDNZ">
-<img src="https://i.imgur.com/5WA2frS.jpeg" width="100" height="46" alt="Gezegen">
-<img src="https://i.imgur.com/aookqwv.png" width="100" height="46" alt="Ãœnal01">
-<img src="https://i.imgur.com/OsIFzUX.png" width="100" height="46" alt="AlmedioNew">
-<img src="https://i.imgur.com/LaHqSNJ.jpeg" width="100" height="46" alt="GÃ¼rsel01">
-<img src="https://i.imgur.com/feCK3Mk.png" width="100" height="46" alt="KRDNZ">
-<img src="https://i.imgur.com/hwoDW8W.jpeg" width="100" height="46" alt="Lilyum02">
-<img src="https://i.imgur.com/T1x0ma7.jpeg" width="100" height="46" alt="Teacher02">
-<img src="https://i.imgur.com/57NQwN3.jpeg" width="100" height="46" alt="Gezegen">
-<img src="https://i.imgur.com/AvXjcKn.png" width="100" height="46" alt="Prenses">
-<img src="https://i.imgur.com/IbT68fn.png" width="100" height="46" alt="Matador03">
-<img src="https://i.imgur.com/wjxHiIm.jpeg" width="100" height="46" alt="RooxBlue">
-<img src="https://i.imgur.com/tlLTEzo.jpeg" width="100" height="46" alt="MÃ¼bariz">
-<img src="https://i.imgur.com/RDJv8kh.png" width="100" height="46" alt="Joker">
-<img src="https://i.imgur.com/if1Z4Zs.png" width="100" height="46" alt="Uzman02">
-<img src="https://i.imgur.com/a46L161.jpeg" width="100" height="46" alt="Asel">
-<img src="https://i.imgur.com/CoDA0f5.png" width="100" height="46" alt="Pacman01">
-<img src="https://i.imgur.com/7gc74xH.png" width="100" height="46" alt="Sinan67">
-<img src="https://i.imgur.com/ZvSIsN8.jpeg" width="100" height="46" alt="Hayalet">
-<img src="https://i.imgur.com/lFy75QE.png" width="100" height="46" alt="Furkan">
-<img src="https://i.imgur.com/JYc1tcc.png" width="100" height="46" alt="Akinci02">
-<img src="https://i.imgur.com/a9Umm9J.png" width="100" height="46" alt="PhoenixTroll">
-<img src="https://i.imgur.com/rEBjNoA.png" width="100" height="46" alt="GÃ¼l">
-<img src="https://i.imgur.com/yn6hiQG.png" width="100" height="46" alt="Anilcan01">
-<img src="https://i.imgur.com/8vFFICG.png" width="100" height="46" alt="Platen">
-<img src="https://i.imgur.com/knUV3Rr.png" width="100" height="46" alt="Hayalet69">
-<img src="https://i.imgur.com/mpP5urH.png" width="100" height="46" alt="MaQa">
-<img src="https://i.imgur.com/jlZnAfe.jpeg" width="100" height="46" alt="TC Simsek">
-<img src="https://i.imgur.com/4XnBjwb.png" width="100" height="46" alt="BuzIlayda">
-<img src="https://i.imgur.com/QLN6Zc7.png" width="100" height="46" alt="Gezegen">
-<img src="https://i.imgur.com/yCkFLfY.png" width="100" height="46" alt="Gezegen">
-<img src="https://i.imgur.com/3UOr1vP.png" width="100" height="46" alt="Almedio">
-<img src="https://i.imgur.com/8gPnE3f.png" width="100" height="46" alt="Almedio01">
-<img src="https://i.imgur.com/tMIkOD3.png" width="100" height="46" alt="Almedio02">
-<img src="https://i.imgur.com/TRpQEx7.png" width="100" height="46" alt="Hayalet01">
-<img src="https://i.imgur.com/MGN2pGy.jpeg" width="100" height="46" alt="Teacher">
-<img src="https://i.imgur.com/MDYejyF.jpeg" width="100" height="46" alt="Teacher01">
-<img src="https://i.imgur.com/VRux9d3.png" width="100" height="46" alt="Akinci01">
-<img src="https://i.imgur.com/GBm1SB6.png" width="100" height="46" alt="Pacman02">
-<img src="https://i.imgur.com/7bXtApL.png" width="100" height="46" alt="Matador01">
-<img src="https://i.imgur.com/mSSd35A.jpeg" width="100" height="46" alt="Lilyum01">
-<img src="https://i.imgur.com/BASedPU.png" width="100" height="46" alt="Uzman01">
-<img src="https://i.imgur.com/9YxJetg.png" width="100" height="46" alt="Anilcan02">
-<img src="https://i.imgur.com/AJ3tZkt.jpeg" width="100" height="46" alt="Gezegen">
-</marquee>
-`);
       $(document).ready(function () {
         $(".fullscreen_button").on("click", function () {
           if (document.fullScreenElement && document.fullScreenElement !== null || !document.mozFullScreen && !document.webkitIsFullScreen) {
@@ -7933,7 +7857,7 @@ window.addEventListener("load", function () {
       $(".description-text").replaceWith(`
 <div class="description-text">
     <div class="Dziri-Gaming-Connect">
-        <img src="https://25servan.github.io/Worm25/images/icon.png" width="20" align="center" alt=""> Worm 25 Connect
+        <img src="https://25servan.github.io/Worm25/images/icon.png" width="20" align="center" alt=""> Worm25 Connect
     </div>
     <div class="description-text-hiep">
 
@@ -7969,23 +7893,6 @@ window.addEventListener("load", function () {
                 <a><span class="flag ua" value="https://i.imgur.com/NQNQTw4.png"></span></a>
             </li>
         </ul>
-		
-		
-        <div class="gachngang"></div>
-        <div class="servers-container">
-		<div class="servers-germania"></div>
-		<div class="servers-granbretana" style="display: none;"></div>
-		<div class="servers-canada" style="display: none;"></div>
-		<div class="servers-mexico" style="display: none;"></div>
-        <div class="servers-brazil"  style="display: none;"></div>
-        <div class="servers-francia" style="display: none;"></div>
-        <div class="servers-singapur" style="display: none;"></div>
-        <div class="servers-japon" style="display: none;"></div>
-        <div class="servers-australia" style="display: none;"></div>
-	    <div class="servers-emirates" style="display: none;"></div>
-        </div>
-    </div>
-</div>
     `);
       document.querySelectorAll(".ui-tab").forEach(tab => {
         tab.addEventListener("click", account);
@@ -8047,6 +7954,24 @@ window.addEventListener("load", function () {
           document.getElementById("adbl-continue").click();
         });
       });
+
+      // دالة للحصول على رابط العلم حسب المنطقة
+      function getFlagUrl(region) {
+        const flagUrls = {
+          germania: "https://i.imgur.com/W4NPSnH.png",
+          granbretana: "https://i.imgur.com/clNQ6yn.png",
+          canada: "https://i.imgur.com/2R1sSEY.png",
+          mexico: "https://i.imgur.com/C0ZOXds.png",
+          brazil: "https://i.imgur.com/iO21LtX.png",
+          francia: "https://i.imgur.com/VfnUZIE.png",
+          singapur: "https://i.imgur.com/lH5yP5U.png",
+          japon: "https://i.imgur.com/fQheIL6.png",
+          australia: "https://i.imgur.com/B0mTjED.png",
+          emirates: "https://i.imgur.com/NQNQTw4.png"
+        };
+        return flagUrls[region] || "https://i.imgur.com/OK2Pk6L.png"; // رابط افتراضي إذا لم يتم العثور على المنطقة
+      }
+    }
     function handleClientData() {
       $("#getskin").on("click", function () {
         for (var i = 0; i < clientes.clientesActivos.length; i++) {
@@ -8196,7 +8121,7 @@ window.addEventListener("load", function () {
     <div class="column-right">
         <div class="label" id="titleSetings">Notification</div>
         <div class="FDZ-Team">
-            <img src="https://25servan.github.io/Worm25/images/25-Team.png" alt="FDZ" />
+            <img src="https://25servan.github.io/Worm25/images/FDZ-Team.png" alt="FDZ" />
             <!-- Button to redirect to Discord -->
             <button id="buy-premium">
                 Discord
@@ -8206,7 +8131,7 @@ window.addEventListener("load", function () {
     </div>
 `);
       $("#buy-premium").on("click", function () {
-        window.open("https://discord.gg", "_blank");
+        window.open("https://discord.gg/5rDvPrEy", "_blank");
       });
       $("#mm-coins-box").replaceWith(`
         <div id="mm-coins-box" style="margin: 0;">
@@ -8683,8 +8608,8 @@ window.addEventListener("load", function () {
     var footerElement = $("#markup-footer");
     adjustLayout();
     $(window).resize(adjustLayout);
-  });
-  window.anApp.p.Bc = function () {sss
+  })();
+  window.anApp.p.Bc = function () {
     var appInstance = window.anApp.p;
     var registryData = {};
     $.get("https://resources.wormate.io/dynamic/assets/registry.json", function (response) {
