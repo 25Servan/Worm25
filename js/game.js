@@ -7893,6 +7893,24 @@ window.addEventListener("load", function () {
                 <a><span class="flag ua" value="https://i.imgur.com/NQNQTw4.png"></span></a>
             </li>
         </ul>
+
+
+        <div class="gachngang"></div>
+        <div class="servers-container">
+		<div class="servers-germania"></div>
+		<div class="servers-granbretana" style="display: none;"></div>
+		<div class="servers-canada" style="display: none;"></div>
+		<div class="servers-mexico" style="display: none;"></div>
+        <div class="servers-brazil"  style="display: none;"></div>
+        <div class="servers-francia" style="display: none;"></div>
+        <div class="servers-singapur" style="display: none;"></div>
+        <div class="servers-japon" style="display: none;"></div>
+        <div class="servers-australia" style="display: none;"></div>
+	    <div class="servers-emirates" style="display: none;"></div>
+        </div>
+    </div>
+</div>
+
     `);
       document.querySelectorAll(".ui-tab").forEach(tab => {
         tab.addEventListener("click", account);
