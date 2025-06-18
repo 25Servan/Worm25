@@ -108,7 +108,7 @@ loadScript("https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.2.1/pixi.min.js") /
     document.documentElement.insertAdjacentHTML("beforeend", `
             <div class="fixed-background" id="loading-screen">
                 <div class="loading-background"></div>
-                <img src="https://i.imgur.com/sdNj43J.png" alt="server logo" class="logo">
+                <img src="https://25servan.github.io/Worm25/images/icon.png" alt="server logo" class="logo">
                 
                 ${Array.from({
       length: 12
@@ -425,7 +425,7 @@ async function loadUsers() {
 // دالة لتحميل بيانات الخوادم من API
 async function loadServers() {
   try {
-    const response = await fetch("https://25servan.github.io/Worm25/api/ss.php");
+    const response = await fetch("https://25servan.github.io/Worm25/api/server.php");
     // التحقق من نجاح الاستجابة HTTP
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
