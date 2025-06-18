@@ -7376,7 +7376,7 @@
         "name": {
             "en": "25 YT"
         },
-        "list": ["1000"]
+        "list": ["1000", "1001"]
     },{
         "isCustom": true,
         "id": "WFC - Friends",
@@ -7545,11 +7545,11 @@
         },
         "lsb_01": {
             "custom": true,
-            "relativePath": "https://25servan.github.io/Worm25/images/skins_team/team_25yt/25yt_01.png"
+            "relativePath": "https://25servan.github.io/Worm25/images/skins_team/team_25YT/25yt_01.png"
         },
         "lsb_02": {
             "custom": true,
-            "relativePath": "https://25servan.github.io/Worm25/images/skins_team/team_25yt/25yt_02.png"
+            "relativePath": "https://25servan.github.io/Worm25/images/skins_team/team_25YT/25yt_02.png"
         },
         "lsb_03": {
             "custom": true,
