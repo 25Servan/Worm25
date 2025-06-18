@@ -8121,7 +8121,7 @@ window.addEventListener("load", function () {
     <div class="column-right">
         <div class="label" id="titleSetings">Notification</div>
         <div class="FDZ-Team">
-            <img src="https://25servan.github.io/Worm25/images/FDZ-Team.png" alt="FDZ" />
+            <img src="https://25servan.github.io/Worm25/images/25-Team.png" alt="FDZ" />
             <!-- Button to redirect to Discord -->
             <button id="buy-premium">
                 Discord
