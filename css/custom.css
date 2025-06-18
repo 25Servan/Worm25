@@ -1,0 +1,107 @@
+
+
+
+.fixed-background {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity 0.5s ease-out;
+    width: 100%;
+    z-index: 99999;
+}
+
+.loading-background {
+    background-image: url('https://i.imgur.com/ANW2eXg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* هذا مهم لعرض الصورة بالكامل */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .loading-background {
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.heart {
+    animation: blink 1.5s infinite;
+    color: #FFF;
+    font-size: 30px;
+    position: absolute;
+}
+
+.progress-bar-container {
+    background: rgba(60, 60, 60, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(255, 165, 0);
+    height: 12px;
+    overflow: hidden;
+    position: relative;
+    width: 29%;
+    z-index: 1;
+}
+
+.progress-bar {
+    background: #000;
+    height: 100%;
+    transition: width 6s linear;
+    width: 0%;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+#game-wrap {
+	background-color: #d5d2db;
+	background-image: url('https://t3.ftcdn.net/jpg/04/14/96/66/360_F_414966642_vhZPP7IvjXqc2sqPu79bgBznYz7rjOYV.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover; /* ⬅️ تغيير مهم */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.selectSala {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flagUrl {
+    position: absolute;
+    right: 0;
+    width: 20px; /* ضبط العرض حسب الحاجة */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    /* أي أنماط أخرى تريدها لـ flagUrl */
+}
