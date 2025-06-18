@@ -8683,8 +8683,8 @@ window.addEventListener("load", function () {
     var footerElement = $("#markup-footer");
     adjustLayout();
     $(window).resize(adjustLayout);
-  })();
-  window.anApp.p.Bc = function () {
+  });
+  window.anApp.p.Bc = function () {sss
     var appInstance = window.anApp.p;
     var registryData = {};
     $.get("https://resources.wormate.io/dynamic/assets/registry.json", function (response) {
