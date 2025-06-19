@@ -8210,7 +8210,6 @@ window.addEventListener("load", function () {
                   </div>
                 </div>
 `);
-      });
       $("#mm-coins-box").replaceWith(`
         <div id="mm-coins-box" style="margin: 0;">
             <button 
