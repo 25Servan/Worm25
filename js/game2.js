@@ -5630,7 +5630,6 @@ window.addEventListener("load", function () {
       var captionElement = $("#final-caption");
       var continueButton = $("#final-continue");
       var backgroundElement = $("#congrats-bg");
-      var hiddenElement = $("#unl6wj4czdl84o9b");
       $("#congrats");
       var shareButton = $("#final-share-fb");
       var finalMessageElement = $("#final-message");
@@ -7615,7 +7614,6 @@ window.addEventListener("load", function () {
     var appConfigData = {};
     appConfigData.main = {
       Ma: createBannerManager("aqnvgcpz05orkobh", "WRM_wormate-io_300x250"),
-      K: createBannerManager("ltmolilci1iurq1i", "wormate-io_970x250"),
       ra: initializeAdBlocker(),
       e: 4,
       oa: false,
@@ -7623,7 +7621,6 @@ window.addEventListener("load", function () {
     };
     appConfigData.miniclip = {
       Ma: createBannerManager("aqnvgcpz05orkobh", "WRM_wormate-io_300x250"),
-      K: createBannerManager("ltmolilci1iurq1i", "wormate-io_970x250"),
       ra: initializeAdBlocker(),
       e: 4,
       oa: false,
@@ -8229,7 +8226,7 @@ window.addEventListener("load", function () {
         </div>
       `);
 
-	    $("unl6wj4czdl84o9b").replaceWith(`
+	    $("ltmolilci1iurq1i").replaceWith(`
 
         <div id="toantrang-quangcao">
                 
