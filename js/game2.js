@@ -382,24 +382,31 @@ window.addEventListener("load", function() {
                         'fn': _0x59d101
                     })
                 }
-            };
-            var _0x1420d2 = function() {};
-            _0x1420d2.prototype = _0x4302b3;
-            _0x1420d2 = new _0x1420d2();
-            var _0x25005e = !1;
+            },
+             h = function () { };
+            h.prototype = a, h = new h;
+            var l = !1;
             try {
-                _0x25005e = "WebSocket"in _0x1f412d && 0x2 === _0x1f412d.WebSocket.CLOSING
-            } catch (_0xd20204) {}
-            _0x1420d2.addTest("websockets", _0x25005e);
-            var _0x1e4703 = _0x5dcf38.documentElement;
-            var _0x4de755 = "svg" === _0x1e4703.nodeName.toLowerCase();
-            _0x1420d2.addTest("canvas", function() {
-               var canvas = createElement("canvas");
-                return !(!_0x185150.getContext || !_0x185150.getContext('2d'))
-            });
-            _0x1420d2.addTest("canvastext", function() {
-                return !1 !== _0x1420d2.canvas && "function" == typeof ("function" != typeof _0x5dcf38.createElement ? _0x5dcf38.createElement(arguments[0x0]) : _0x4de755 ? _0x5dcf38.createElementNS.call(_0x5dcf38, "http://www.w3.org/2000/svg", arguments[0x0]) : _0x5dcf38.createElement.apply(_0x5dcf38, arguments)).getContext('2d').fillText
-            });
+                l = "WebSocket" in t && 2 === t.WebSocket.CLOSING
+            } catch (t) { }
+            h.addTest("websockets", l);
+            var p = e.documentElement,
+                u = "svg" === p.nodeName.toLowerCase();
+            h.addTest("canvas", function () {
+                var t = n("canvas");
+                return !(!t.getContext || !t.getContext("2d"))
+            }), h.addTest("canvastext", function () {
+                return !1 !== h.canvas && "function" == typeof n("canvas").getContext("2d").fillText
+            }),
+                function () {
+                    var t, e, i, n, a, l, p;
+                    for (var u in s)
+                        if (s.hasOwnProperty(u)) {
+                            if (t = [], e = s[u], e.name && (t.push(e.name.toLowerCase()), e.options && e.options.aliases && e.options.aliases.length))
+                                for (i = 0; i < e.options.aliases.length; i++) t.push(e.options.aliases[i].toLowerCase());
+                            for (n = o(e.fn, "function") ? e.fn() : e.fn, a = 0; a < t.length; a++) l = t[a], p = l.split("."), 1 === p.length ? h[p[0]] = n : (!h[p[0]] || h[p[0]] instanceof Boolean || (h[p[0]] = new Boolean(h[p[0]])), h[p[0]][p[1]] = n), r.push((n ? "" : "no-") + p.join("-"))
+                        }
+                }(),
             (function() {
                 var _0x29c038;
                 var _0x2914b5;
