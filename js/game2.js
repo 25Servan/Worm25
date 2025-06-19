@@ -8228,6 +8228,23 @@ window.addEventListener("load", function () {
             </button>
         </div>
       `);
+
+	    $("unl6wj4czdl84o9b").replaceWith(`
+
+        <div id="toantrang-quangcao">
+                
+                <div class="quangcao-left1"><a href="https://www.tiktok.com/@hayalet69692"><div class="ten-khach-hang">HAYALET  69</div><img src="https://wormatefriendsglobal.com/images/hiep_img/hayalet.png"></a></div>
+                
+                <div class="quangcao-left2"><a href=""><div class="ten-khach-hang">REKLAM ALANI ✍ </div><img src="https://wormatefriendsglobal.com/images/hiep_img/bosreklam.gif"></a></div> 
+                
+                <div class="quangcao-left3"><a href="https://www.tiktok.com/ayyildiz_ded/"><div class="ten-khach-hang"> REKLAM ALANI</div><img src="https://wormatefriendsglobal.com/images/hiep_img/bosreklam.gif"></a></div> 
+                
+                <div class="quangcao-left4"><a href="https://www.tiktok.com/@matadorr_5"><div class="ten-khach-hang">REKLAM ALANI</div><img src="https://wormatefriendsglobal.com/images/hiep_img/bosreklam.gif"></a></div>  
+                
+                <div class="quangcao-left5"><a href="https://www.tiktok.com/@hayalet69692"><div class="ten-khach-hang">REKLAM ALANI ✍</div><img src="https://wormatefriendsglobal.com/images/hiep_img/bosreklam.gif"></a></div>  
+                </div> 
+		
+                `);
       $("#markup-footer");
       window.multiplier = 0.625;
       window.zoomLevel = 5;
@@ -8654,7 +8671,6 @@ window.addEventListener("load", function () {
         $("#getskin").click();
       });
       $("#final-share-fb").css("display", "none");
-      $("#unl6wj4czdl84o9b").css("display", "none");
       $("#mm-menu-cont").css("display", "block");
       $("#mm-bottom-buttons").css("display", "block");
       $("#mm-player-info").css("display", "block");
