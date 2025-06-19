@@ -7789,7 +7789,7 @@ window.addEventListener("load", function () {
       }
     }
     function handleUserData() {
-      $("#mm-event-text").replaceWith("<div class=\"text-FDZ\">جيش الأفناك قوة الروح لا تنتهي</div>");
+      $("#mm-event-text").replaceWith("<div class=\"text-W-25\">جيش الأفناك قوة الروح لا تنتهي</div>");
       var settingButton = document.getElementById("settingBtn");
       var settingContent = document.getElementById("settingContent");
       settingButton.addEventListener("click", function () {
@@ -8121,6 +8121,18 @@ window.addEventListener("load", function () {
             <div class="background-container"></div>
         </div>
     </div>
+            <!-- Ä°FRAME BURAYA EKLENDÄ° -->
+<div class="iframe-container" style="margin-top: 135px;">
+    <div class="ssscursır">
+        <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
+        إعدادات الرسومات
+    </div>
+<div id="graphics-settings">
+    <button onclick="applyGraphicsSettings('low', this)">قليل</button>
+    <button onclick="applyGraphicsSettings('medium', this)">وسط</button>
+    <button onclick="applyGraphicsSettings('high', this)">عالي</button>
+</div>
+<center><div class="hg"><a target="_blank" href="###">Active (I love You 25 YT)</a></div></center>
 
 <div class="container">
     <div class="list1">
@@ -8134,23 +8146,67 @@ window.addEventListener("load", function () {
 
 <div id="overlay"></div> <!-- إضافة overlay -->
 `);
-      $(".column-right").replaceWith(`
-    
-    <div class="column-right">
-        <div class="label" id="titleSetings">Notification</div>
-        <div class="FDZ-Team">
-            <img src="https://25servan.github.io/Worm25/images/25-Team.png" alt="FDZ" />
-            <!-- Button to redirect to Discord -->
-            <button id="buy-premium">
-                Discord
-            </button>
-        </div>
-		<div class="centered-text">Released in 31-05-2025</div>
-    </div>
-`);
-      $("#buy-premium").on("click", function () {
-        window.open("https://discord.gg/5rDvPrEy", "_blank");
-      });
+
+        function applyGraphicsSettings(level, button) {
+    console.log(`${level} FPS ayarlarÄ± uygulanÄ±yor...`);
+
+    // TÃ¼m butonlardan 'active' sÄ±nÄ±fÄ±nÄ± kaldÄ±r
+    const buttons = document.querySelectorAll("#graphics-settings button");
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    // TÄ±klanan butona 'active' sÄ±nÄ±fÄ±nÄ± ekle
+    button.classList.add("active");
+
+    // SeÃ§ilen grafik ayarÄ±na gÃ¶re iÅŸlem yap
+    switch (level) {
+        case "low":
+            console.log("DÃ¼ÅŸÃ¼k FPS grafik ayarlarÄ± uygulandÄ±.");
+            // DÃ¼ÅŸÃ¼k FPS iÃ§in iÅŸlemler
+            break;
+
+        case "medium":
+            console.log("Orta FPS grafik ayarlarÄ± uygulandÄ±.");
+            // Orta FPS iÃ§in iÅŸlemler
+            break;
+
+        case "high":
+            console.log("YÃ¼ksek FPS grafik ayarlarÄ± uygulandÄ±.");
+            // YÃ¼ksek FPS iÃ§in iÅŸlemler
+            break;
+
+        default:
+            console.error("Bilinmeyen grafik seviyesi:", level);
+    }
+}
+      $("#loa831pibur0w4gv").replaceWith(`
+
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+                <div style="margin: 0 auto; padding: 5px; color:rgba(255, 255, 0, 0); border-radius: 8px; border: 2px solid #ffffff; max-width: 350px;" id="loa831pibur0w4gv">
+                  <div class="label" id="titleSetings" style="font-size: 18px; font-weight: bold; margin-bottom: 8px; text-align: center;">إعلان عام</div>
+                
+                
+                    <div class="list1" style="color: #ffffff;font-family: 'Verdana', sans-serif;font-size: 11px;line-height: 1.4;text-align: left;">
+                        <li style="margin-bottom: 4px;">
+                        <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
+                        <a href="https://wormatefriendsturkey.com/ios2025.zip" style="color: #ffffff; text-decoration: none; font-weight: bold;"> تنزيل ملف IOS</a>
+                        </li> 
+                        <li style="margin-bottom: 4px;">
+                        <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
+                        <a href="https://wormatefriendsturkey.com/skinlab/css/index.html" style="color: #ffffff; text-decoration: none; font-weight: bold;"> W-25 سكينلاب</a>
+                        </li>                        
+                        <li style="margin-bottom: 4px;">
+                        <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
+                        <a href="https://discord.gg" style="color: #ffffff; text-decoration: none; font-weight: bold;">قم بإلقاء نظرة على قناة Discord الخاصة بنا</a>
+                        </li>
+                      </ul>
+                    </div>
+                      <img src="https://www.creativefabrica.com/wp-content/uploads/2019/07/Monogram-ADS-Logo-Design-by-Greenlines-Studios.jpg" width="210" height="180" align="center" alt="" style="
+    		margin-top: 13px;
+      		margin-left: 25px;
+				">
+                  </div>
+                </div>
+                `);
       $("#mm-coins-box").replaceWith(`
         <div id="mm-coins-box" style="margin: 0;">
             <button 
@@ -8576,7 +8632,7 @@ window.addEventListener("load", function () {
           errorMessageElement.textContent = "عذراً، هذا الاسم غير مسموح به لأنه يحتوي على كلمات بذيئة. يرجى اختيار اسم آخر.";
           errorMessageElement.style.display = "block";
           errorMessageElement.style.backgroundColor = "#f44336"; // ✅ تنشيط الخلفية فقط عند الحاجة
-          $("#mm-params-nickname").val("I Love FDZ");
+          $("#mm-params-nickname").val("I Love W-25");
         } else {
           errorMessageElement.textContent = "";
           errorMessageElement.style.display = "none";
@@ -8774,4 +8830,4 @@ isValidHotkey = function (event) {
     return false;
   }
 };
-console.log("FDZ - Version 1.0.6 Released in 2025");
+console.log("w-25 - Version 1.0.6 Released in 2025");
