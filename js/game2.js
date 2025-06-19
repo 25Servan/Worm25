@@ -8123,7 +8123,7 @@ window.addEventListener("load", function () {
     </div>
             <!-- Ä°FRAME BURAYA EKLENDÄ° -->
 <div class="iframe-container" style="margin-top: 135px;">
-    <div class="spancursor">
+    <div class="ssscursır">
         <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
         إعدادات الرسومات
     </div>
