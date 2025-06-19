@@ -8129,17 +8129,18 @@ window.addEventListener("load", function () {
             <div class="background-container"></div>
         </div>
     </div>
-    <!-- Ä°FRAME BURAYA EKLENDÄ° -->
+            <!-- Ä°FRAME BURAYA EKLENDÄ° -->
 <div class="iframe-container" style="margin-top: -3px;">
-    <div class="ssscursır">
+    <div class="sssacursır">
         <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
-        Skins YÃ¼kleme
+        تحميل جلود
     </div>
     <iframe src="https://wormatefriendsturkey.com/api/skins_upload.php" scrolling="no"></iframe>
 </div>
 
-
-édiv class="iframe-container" style="margin-top: 135px;">
+            <td>
+            <!-- Ä°FRAME BURAYA EKLENDÄ° -->
+<div class="iframe-container" style="margin-top: 135px;">
     <div class="ssscursır">
         <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
         إعدادات الرسومات
