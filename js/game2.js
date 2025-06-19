@@ -358,7 +358,7 @@ window.addEventListener("load", function() {
                 '_version': "3.3.1",
                 '_config': {
                     'classPrefix': '',
-                    'enableClasses': !0,
+                    '': !0,
                     'enableJSClass': !0,
                     'usePrefixes': !0
                 },
@@ -394,7 +394,7 @@ window.addEventListener("load", function() {
             var _0x1e4703 = _0x5dcf38.documentElement;
             var _0x4de755 = "svg" === _0x1e4703.nodeName.toLowerCase();
             _0x1420d2.addTest("canvas", function() {
-                var _0x185150 = "function" != typeof _0x5dcf38.createElement ? _0x5dcf38.createElement(arguments[0x0]) : _0x4de755 ? _0x5dcf38.createElementNS.call(_0x5dcf38, "http://www.w3.org/2000/svg", arguments[0x0]) : _0x5dcf38.createElement.apply(_0x5dcf38, arguments);
+               var canvas = createElement("canvas");
                 return !(!_0x185150.getContext || !_0x185150.getContext('2d'))
             });
             _0x1420d2.addTest("canvastext", function() {
