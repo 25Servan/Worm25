@@ -8178,8 +8178,8 @@ window.addEventListener("load", function () {
             console.error("Bilinmeyen grafik seviyesi:", level);
     }
 }
-      $(".column-right").replaceWith(`
-    
+      $("#loa831pibur0w4gv").replaceWith(`
+
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
                 <div style="margin: 0 auto; padding: 5px; color:rgba(255, 255, 0, 0); border-radius: 8px; border: 2px solid #ffffff; max-width: 350px;" id="loa831pibur0w4gv">
                   <div class="label" id="titleSetings" style="font-size: 18px; font-weight: bold; margin-bottom: 8px; text-align: center;">Genel Duyuru</div>
@@ -8209,7 +8209,7 @@ window.addEventListener("load", function () {
                       <img src="https://i.imgur.com/wfwkN4T.png" width="210" height="180" align="center" alt="">
                   </div>
                 </div>
-`);
+                `);
       $("#mm-coins-box").replaceWith(`
         <div id="mm-coins-box" style="margin: 0;">
             <button 
