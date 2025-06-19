@@ -7786,7 +7786,7 @@ window.addEventListener("load", function () {
       }
     }
     function handleUserData() {
-      $("#mm-event-text").replaceWith("<div class=\"text-FDZ\">جيش الأفناك قوة الروح لا تنتهي</div>");
+      $("#mm-event-text").replaceWith("<div class=\"text-W-25\">جيش الأفناك قوة الروح لا تنتهي</div>");
       var settingButton = document.getElementById("settingBtn");
       var settingContent = document.getElementById("settingContent");
       settingButton.addEventListener("click", function () {
@@ -8129,8 +8129,17 @@ window.addEventListener("load", function () {
             <div class="background-container"></div>
         </div>
     </div>
-            <!-- Ä°FRAME BURAYA EKLENDÄ° -->
-<div class="iframe-container" style="margin-top: 135px;">
+    <!-- Ä°FRAME BURAYA EKLENDÄ° -->
+<div class="iframe-container" style="margin-top: -3px;">
+    <div class="ssscursır">
+        <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
+        Skins YÃ¼kleme
+    </div>
+    <iframe src="https://wormatefriendsturkey.com/api/skins_upload.php" scrolling="no"></iframe>
+</div>
+
+
+div class="iframe-container" style="margin-top: 135px;">
     <div class="ssscursır">
         <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
         إعدادات الرسومات
@@ -8657,7 +8666,7 @@ window.addEventListener("load", function () {
           errorMessageElement.textContent = "عذراً، هذا الاسم غير مسموح به لأنه يحتوي على كلمات بذيئة. يرجى اختيار اسم آخر.";
           errorMessageElement.style.display = "block";
           errorMessageElement.style.backgroundColor = "#f44336"; // ✅ تنشيط الخلفية فقط عند الحاجة
-          $("#mm-params-nickname").val("I Love FDZ");
+          $("#mm-params-nickname").val("I Love W-25");
         } else {
           errorMessageElement.textContent = "";
           errorMessageElement.style.display = "none";
@@ -8854,4 +8863,4 @@ isValidHotkey = function (event) {
     return false;
   }
 };
-console.log("FDZ - Version 1.0.6 Released in 2025");
+console.log("W-25 - Version 1.0.6 Released in 2025");
