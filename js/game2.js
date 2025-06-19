@@ -8185,8 +8185,7 @@ window.addEventListener("load", function () {
                   <div class="label" id="titleSetings" style="font-size: 18px; font-weight: bold; margin-bottom: 8px; text-align: center;">إعلان عام</div>
                 
                 
-                    <div class="list1" style="color: #ffffff; font-family: 'Verdana', sans-serif; font-size: 12px; line-height: 1.4;">
-                      <ul style="list-style: none; padding: 0; margin: 0;">
+                    <div class="list1" style="color: #ffffff;font-family: 'Verdana', sans-serif;font-size: 11px;line-height: 1.4;text-align: left;">
                         <li style="margin-bottom: 4px;">
                         <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
                         <a href="https://wormatefriendsturkey.com/ios2025.zip" style="color: #ffffff; text-decoration: none; font-weight: bold;"> تنزيل ملف IOS</a>
@@ -8203,6 +8202,7 @@ window.addEventListener("load", function () {
                     </div>
                       <img src="https://www.creativefabrica.com/wp-content/uploads/2019/07/Monogram-ADS-Logo-Design-by-Greenlines-Studios.jpg" width="210" height="180" align="center" alt="" style="
     		margin-top: 13px;
+      		margin-left: 25px;
 				">
                   </div>
                 </div>
