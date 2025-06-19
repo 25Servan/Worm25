@@ -8121,16 +8121,28 @@ window.addEventListener("load", function () {
             <div class="background-container"></div>
         </div>
     </div>
-    <div class="container">
+    <!-- Ä°FRAME BURAYA EKLENDÄ° -->
+<div class="iframe-container" style="margin-top: -3px;">
     <div class="spancursor">
         <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
-        إعدادات الرسومات
+        Skins YÃ¼kleme
+    </div>
+    <iframe src="https://worm25.infinityfreeapp.com/uploadskins.php" scrolling="no"></iframe>
+</div>
+
+            <td>
+            <!-- Ä°FRAME BURAYA EKLENDÄ° -->
+<div class="iframe-container" style="margin-top: -3px;">
+    <div class="spancursor">
+        <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
+        Ã‡Ã¶zÃ¼nÃ¼rlÃ¼k
     </div>
 <div id="graphics-settings">
     <button onclick="applyGraphicsSettings('low', this)">قليل</button>
     <button onclick="applyGraphicsSettings('medium', this)">وسط</button>
     <button onclick="applyGraphicsSettings('high', this)">عالي</button>
 </div>
+<center><div class="hg"><a target="_blank" href="###">AktifleÅŸtir (I love You 25 YT)</a></div></center>
 
 <div class="container">
     <div class="list1">
