@@ -7549,7 +7549,7 @@
         },
         "25yt_02": {
             "custom": true,
-            "relativePath": "https://i.imgur.com/ZfpQ9OT.png"
+            "relativePath": "https:\/\/i.imgur.com\/joBjSqW.png"
         },
         "lsb_03": {
             "custom": true,
