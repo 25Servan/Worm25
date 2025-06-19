@@ -8182,31 +8182,28 @@ window.addEventListener("load", function () {
 
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
                 <div style="margin: 0 auto; padding: 5px; color:rgba(255, 255, 0, 0); border-radius: 8px; border: 2px solid #ffffff; max-width: 350px;" id="loa831pibur0w4gv">
-                  <div class="label" id="titleSetings" style="font-size: 18px; font-weight: bold; margin-bottom: 8px; text-align: center;">Genel Duyuru</div>
+                  <div class="label" id="titleSetings" style="font-size: 18px; font-weight: bold; margin-bottom: 8px; text-align: center;">إعلان عام</div>
                 
-                  <div class="bao-list1">
-                    <div class="list1" style="font-size: 12px; font-family: Arial, sans-serif; margin-bottom: 8px; text-align: center;">
-                      <i class="fa fa-calendar" aria-hidden="true" style="color: #ffffff; margin-right: 5px;"></i>
-                      <strong>UPDATE:</strong> 02/05/2025<br>
-                    </div>
                 
                     <div class="list1" style="color: #ffffff; font-family: 'Verdana', sans-serif; font-size: 12px; line-height: 1.4;">
                       <ul style="list-style: none; padding: 0; margin: 0;">
                         <li style="margin-bottom: 4px;">
                         <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
-                        <a href="https://wormatefriendsturkey.com/ios2025.zip" style="color: #ffffff; text-decoration: none; font-weight: bold;"> IOS Dosyasi Indir</a>
+                        <a href="https://wormatefriendsturkey.com/ios2025.zip" style="color: #ffffff; text-decoration: none; font-weight: bold;"> تنزيل ملف IOS</a>
                         </li> 
                         <li style="margin-bottom: 4px;">
                         <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
-                        <a href="https://wormatefriendsturkey.com/skinlab/css/index.html" style="color: #ffffff; text-decoration: none; font-weight: bold;"> WFT SkinLab Â©</a>
+                        <a href="https://wormatefriendsturkey.com/skinlab/css/index.html" style="color: #ffffff; text-decoration: none; font-weight: bold;"> W-25 سكينلاب</a>
                         </li>                        
                         <li style="margin-bottom: 4px;">
                         <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
-                        <a href="https://discord.gg/3cWfjYPY" style="color: #ffffff; text-decoration: none; font-weight: bold;">Discord KanalÄ±mÄ±za GÃ¶z AtÄ±n</a>
+                        <a href="https://discord.gg" style="color: #ffffff; text-decoration: none; font-weight: bold;">قم بإلقاء نظرة على قناة Discord الخاصة بنا</a>
                         </li>
                       </ul>
                     </div>
-                      <img src="https://i.imgur.com/wfwkN4T.png" width="210" height="180" align="center" alt="">
+                      <img src="https://www.creativefabrica.com/wp-content/uploads/2019/07/Monogram-ADS-Logo-Design-by-Greenlines-Studios.jpg" width="210" height="180" align="center" alt="" style="
+    		margin-top: 13px;
+				">
                   </div>
                 </div>
                 `);
