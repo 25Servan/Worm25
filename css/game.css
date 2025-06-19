@@ -304,6 +304,18 @@ div#graphics-settings {
     text-align: center;
 }
 
+#graphics-settings button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-top {
     box-sizing: border-box;
     height: 70px;
