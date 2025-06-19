@@ -8122,10 +8122,10 @@ window.addEventListener("load", function () {
         </div>
     </div>
             <!-- Ä°FRAME BURAYA EKLENDÄ° -->
-<div class="iframe-container" style="margin-top: -3px;">
+<div class="iframe-container" style="margin-top: 135px;">
     <div class="spancursor">
         <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
-        Ã‡Ã¶zÃ¼nÃ¼rlÃ¼k
+        إعدادات الرسومات
     </div>
 <div id="graphics-settings">
     <button onclick="applyGraphicsSettings('low', this)">قليل</button>
