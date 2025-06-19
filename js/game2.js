@@ -383,22 +383,23 @@ window.addEventListener("load", function() {
                     })
                 }
             };
-                 function ModernizrProto() {}
-      ModernizrProto.prototype = Modernizr;
-      ModernizrProto = new ModernizrProto();
-      var supportsWebSocket = false;
-      try {
-        supportsWebSocket = "WebSocket" in window && window.WebSocket.CLOSING === 2;
-      } catch (error) {}
-      ModernizrProto.addTest("websockets", supportsWebSocket);
-      var documentElement = document.documentElement;
-      var isSVG = documentElement.nodeName.toLowerCase() === "svg";
-      ModernizrProto.addTest("canvas", function () {
-        var canvas = createElement("canvas");
-        return !!canvas.getContext && !!canvas.getContext("2d", {
-          willReadFrequently: true
-        });
-      });
+            var _0x1420d2 = function() {};
+            _0x1420d2.prototype = _0x4302b3;
+            _0x1420d2 = new _0x1420d2();
+            var _0x25005e = !1;
+            try {
+                _0x25005e = "WebSocket"in _0x1f412d && 0x2 === _0x1f412d.WebSocket.CLOSING
+            } catch (_0xd20204) {}
+            _0x1420d2.addTest("websockets", _0x25005e);
+            var _0x1e4703 = _0x5dcf38.documentElement;
+            var _0x4de755 = "svg" === _0x1e4703.nodeName.toLowerCase();
+            _0x1420d2.addTest("canvas", function() {
+                var _0x185150 = "function" != typeof _0x5dcf38.createElement ? _0x5dcf38.createElement(arguments[0x0]) : _0x4de755 ? _0x5dcf38.createElementNS.call(_0x5dcf38, "http://www.w3.org/2000/svg", arguments[0x0]) : _0x5dcf38.createElement.apply(_0x5dcf38, arguments);
+                return !(!_0x185150.getContext || !_0x185150.getContext('2d'))
+            });
+            _0x1420d2.addTest("canvastext", function() {
+                return !1 !== _0x1420d2.canvas && "function" == typeof ("function" != typeof _0x5dcf38.createElement ? _0x5dcf38.createElement(arguments[0x0]) : _0x4de755 ? _0x5dcf38.createElementNS.call(_0x5dcf38, "http://www.w3.org/2000/svg", arguments[0x0]) : _0x5dcf38.createElement.apply(_0x5dcf38, arguments)).getContext('2d').fillText
+            });
             (function() {
                 var _0x29c038;
                 var _0x2914b5;
