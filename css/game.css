@@ -4643,7 +4643,7 @@ i.fa.fa-solid.fa-signal {
 	
 }
 
-.text-FDZ {
+.text-W-25 {
     color: #FFF;
     font-size: 20px;
     font-weight: 700;
@@ -4653,7 +4653,7 @@ i.fa.fa-solid.fa-signal {
     animation: text-shadow-animation 1.5s infinite;
 }
 
-.text-FDZ:hover {
+.text-W-25:hover {
     color: #000;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
