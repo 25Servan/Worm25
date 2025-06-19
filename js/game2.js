@@ -8180,20 +8180,36 @@ window.addEventListener("load", function () {
 }
       $(".column-right").replaceWith(`
     
-    <div class="column-right">
-        <div class="label" id="titleSetings">Notification</div>
-        <div class="FDZ-Team">
-            <img src="https://25servan.github.io/Worm25/images/25-Team.png" alt="FDZ" />
-            <!-- Button to redirect to Discord -->
-            <button id="buy-premium">
-                Discord
-            </button>
-        </div>
-		<div class="centered-text">Released in 31-05-2025</div>
-    </div>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+                <div style="margin: 0 auto; padding: 5px; color:rgba(255, 255, 0, 0); border-radius: 8px; border: 2px solid #ffffff; max-width: 350px;" id="loa831pibur0w4gv">
+                  <div class="label" id="titleSetings" style="font-size: 18px; font-weight: bold; margin-bottom: 8px; text-align: center;">Genel Duyuru</div>
+                
+                  <div class="bao-list1">
+                    <div class="list1" style="font-size: 12px; font-family: Arial, sans-serif; margin-bottom: 8px; text-align: center;">
+                      <i class="fa fa-calendar" aria-hidden="true" style="color: #ffffff; margin-right: 5px;"></i>
+                      <strong>UPDATE:</strong> 02/05/2025<br>
+                    </div>
+                
+                    <div class="list1" style="color: #ffffff; font-family: 'Verdana', sans-serif; font-size: 12px; line-height: 1.4;">
+                      <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 4px;">
+                        <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
+                        <a href="https://wormatefriendsturkey.com/ios2025.zip" style="color: #ffffff; text-decoration: none; font-weight: bold;"> IOS Dosyasi Indir</a>
+                        </li> 
+                        <li style="margin-bottom: 4px;">
+                        <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
+                        <a href="https://wormatefriendsturkey.com/skinlab/css/index.html" style="color: #ffffff; text-decoration: none; font-weight: bold;"> WFT SkinLab Â©</a>
+                        </li>                        
+                        <li style="margin-bottom: 4px;">
+                        <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
+                        <a href="https://discord.gg/3cWfjYPY" style="color: #ffffff; text-decoration: none; font-weight: bold;">Discord KanalÄ±mÄ±za GÃ¶z AtÄ±n</a>
+                        </li>
+                      </ul>
+                    </div>
+                      <img src="https://i.imgur.com/wfwkN4T.png" width="210" height="180" align="center" alt="">
+                  </div>
+                </div>
 `);
-      $("#buy-premium").on("click", function () {
-        window.open("https://discord.gg/5rDvPrEy", "_blank");
       });
       $("#mm-coins-box").replaceWith(`
         <div id="mm-coins-box" style="margin: 0;">
