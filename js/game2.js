@@ -8121,6 +8121,16 @@ window.addEventListener("load", function () {
             <div class="background-container"></div>
         </div>
     </div>
+    <div class="container">
+    <div class="spancursor">
+        <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
+        إعدادات الرسومات
+    </div>
+<div id="graphics-settings">
+    <button onclick="applyGraphicsSettings('low', this)">قليل</button>
+    <button onclick="applyGraphicsSettings('medium', this)">وسط</button>
+    <button onclick="applyGraphicsSettings('high', this)">عالي</button>
+</div>
 
 <div class="container">
     <div class="list1">
@@ -8130,16 +8140,6 @@ window.addEventListener("load", function () {
         مفاتيح <i class="fa-solid fa-r red-icon"></i> إحياء سريع
     </div>
 </div>
-</div>
-<div class="container">
-    <div class="spancursor">
-        <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
-        إعدادات الرسومات
-    </div>
-<div id="graphics-settings">
-    <button onclick="applyGraphicsSettings('low', this)">قليل</button>
-    <button onclick="applyGraphicsSettings('medium', this)">وسط</button>
-    <button onclick="applyGraphicsSettings('high', this)">عالي</button>
 </div>
 
 <div id="overlay"></div> <!-- إضافة overlay -->
