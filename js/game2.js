@@ -8133,7 +8133,7 @@ window.addEventListener("load", function () {
     <button onclick="applyGraphicsSettings('high', this)">عالي</button>
 </div>
 <div class="iframe-container" style="margin-top: -3px;">
-    <div class="spancursor">
+    <div class="ssskin">
         <i aria-hidden="true" class="fa fa-upload" style="color:#ffffff; font-size: 25px; margin-right: 10px;"></i>
         تحميل جلود
     </div>
