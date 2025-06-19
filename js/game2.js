@@ -7827,6 +7827,17 @@ window.addEventListener("load", function () {
         <input type="button" value="RESPAWN" id="hoisinh" class="fullscreen_respawn">
     </div>
 `);
+
+
+	    $(".mm-merchant-cont").html(`
+ <marquee behavior="scroll" direction="left" width="340" height="48">
+<img src="https://www.creativefabrica.com/wp-content/uploads/2019/07/Monogram-ADS-Logo-Design-by-Greenlines-Studios.jpg" width="100" height="46" alt="SRTquasim">
+<img src="https://www.creativefabrica.com/wp-content/uploads/2019/07/Monogram-ADS-Logo-Design-by-Greenlines-Studios.jpg" width="100" height="46" alt="SRTseka">
+<img src="https://www.creativefabrica.com/wp-content/uploads/2019/07/Monogram-ADS-Logo-Design-by-Greenlines-Studios.jpg" width="100" height="46" alt="Matador">
+<img src="https://www.creativefabrica.com/wp-content/uploads/2019/07/Monogram-ADS-Logo-Design-by-Greenlines-Studios.jpg" width="100" height="46" alt="KRDNZ">
+</marquee>
+`);
+	    
       $(document).ready(function () {
         $(".fullscreen_button").on("click", function () {
           if (document.fullScreenElement && document.fullScreenElement !== null || !document.mozFullScreen && !document.webkitIsFullScreen) {
