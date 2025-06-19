@@ -5630,6 +5630,7 @@ window.addEventListener("load", function () {
       var captionElement = $("#final-caption");
       var continueButton = $("#final-continue");
       var backgroundElement = $("#congrats-bg");
+      var hiddenElement = $("#unl6wj4czdl84o9b");
       $("#congrats");
       var shareButton = $("#final-share-fb");
       var finalMessageElement = $("#final-message");
@@ -7614,6 +7615,7 @@ window.addEventListener("load", function () {
     var appConfigData = {};
     appConfigData.main = {
       Ma: createBannerManager("aqnvgcpz05orkobh", "WRM_wormate-io_300x250"),
+      K: createBannerManager("ltmolilci1iurq1i", "wormate-io_970x250"),
       ra: initializeAdBlocker(),
       e: 4,
       oa: false,
@@ -7621,6 +7623,7 @@ window.addEventListener("load", function () {
     };
     appConfigData.miniclip = {
       Ma: createBannerManager("aqnvgcpz05orkobh", "WRM_wormate-io_300x250"),
+      K: createBannerManager("ltmolilci1iurq1i", "wormate-io_970x250"),
       ra: initializeAdBlocker(),
       e: 4,
       oa: false,
@@ -7824,17 +7827,6 @@ window.addEventListener("load", function () {
         <input type="button" value="RESPAWN" id="hoisinh" class="fullscreen_respawn">
     </div>
 `);
-
-
-	    $(".mm-merchant-cont").html(`
- <marquee behavior="scroll" direction="left" width="340" height="48">
-<img src="https://www.creativefabrica.com/wp-content/uploads/2019/07/Monogram-ADS-Logo-Design-by-Greenlines-Studios.jpg" width="100" height="46" alt="SRTquasim">
-<img src="https://www.creativefabrica.com/wp-content/uploads/2019/07/Monogram-ADS-Logo-Design-by-Greenlines-Studios.jpg" width="100" height="46" alt="SRTseka">
-<img src="https://www.creativefabrica.com/wp-content/uploads/2019/07/Monogram-ADS-Logo-Design-by-Greenlines-Studios.jpg" width="100" height="46" alt="Matador">
-<img src="https://www.creativefabrica.com/wp-content/uploads/2019/07/Monogram-ADS-Logo-Design-by-Greenlines-Studios.jpg" width="100" height="46" alt="KRDNZ">
-</marquee>
-`);
-	    
       $(document).ready(function () {
         $(".fullscreen_button").on("click", function () {
           if (document.fullScreenElement && document.fullScreenElement !== null || !document.mozFullScreen && !document.webkitIsFullScreen) {
@@ -8139,7 +8131,7 @@ window.addEventListener("load", function () {
     <button onclick="applyGraphicsSettings('low', this)">قليل</button>
     <button onclick="applyGraphicsSettings('medium', this)">وسط</button>
     <button onclick="applyGraphicsSettings('high', this)">عالي</button>
-	<iframe src="https://wormatefriendsturkey.com/api/skins_upload.php" scrolling="no"></iframe>
+     <iframe src="https://wormatefriendsturkey.com/api/skins_upload.php" scrolling="no"></iframe>
 </div>
 <center><div class="hg"><a target="_blank" href="###">Active (I love You 25 YT)</a></div></center>
 
@@ -8226,23 +8218,6 @@ window.addEventListener("load", function () {
             </button>
         </div>
       `);
-
-	    $("ltmolilci1iurq1i").replaceWith(`
-
-        <div id="toantrang-quangcao">
-                
-                <div class="quangcao-left1"><a href="https://www.tiktok.com/@hayalet69692"><div class="ten-khach-hang">HAYALET  69</div><img src="https://wormatefriendsglobal.com/images/hiep_img/hayalet.png"></a></div>
-                
-                <div class="quangcao-left2"><a href=""><div class="ten-khach-hang">REKLAM ALANI ✍ </div><img src="https://wormatefriendsglobal.com/images/hiep_img/bosreklam.gif"></a></div> 
-                
-                <div class="quangcao-left3"><a href="https://www.tiktok.com/ayyildiz_ded/"><div class="ten-khach-hang"> REKLAM ALANI</div><img src="https://wormatefriendsglobal.com/images/hiep_img/bosreklam.gif"></a></div> 
-                
-                <div class="quangcao-left4"><a href="https://www.tiktok.com/@matadorr_5"><div class="ten-khach-hang">REKLAM ALANI</div><img src="https://wormatefriendsglobal.com/images/hiep_img/bosreklam.gif"></a></div>  
-                
-                <div class="quangcao-left5"><a href="https://www.tiktok.com/@hayalet69692"><div class="ten-khach-hang">REKLAM ALANI ✍</div><img src="https://wormatefriendsglobal.com/images/hiep_img/bosreklam.gif"></a></div>  
-                </div> 
-		
-                `);
       $("#markup-footer");
       window.multiplier = 0.625;
       window.zoomLevel = 5;
@@ -8669,6 +8644,7 @@ window.addEventListener("load", function () {
         $("#getskin").click();
       });
       $("#final-share-fb").css("display", "none");
+      $("#unl6wj4czdl84o9b").css("display", "none");
       $("#mm-menu-cont").css("display", "block");
       $("#mm-bottom-buttons").css("display", "block");
       $("#mm-player-info").css("display", "block");
@@ -8855,4 +8831,4 @@ isValidHotkey = function (event) {
     return false;
   }
 };
-console.log("W-25 - Version 1.0.6 Released in 2025");
+console.log("w-25 - Version 1.0.6 Released in 2025");
