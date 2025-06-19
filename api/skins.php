@@ -3426,7 +3426,7 @@
         "price": 0,
         "priceBefore": 0,
         "prime": "c__yllw",
-        "base": ["lsb_02_8", "lsb_02_7", "lsb_02_6", "lsb_02_5", "lsb_02_4", "lsb_02_3", "lsb_02_2", "lsb_02_1", "lsb_02_0"],
+        "base": ["25yt_02_8", "25yt_02_7", "25yt_02_6", "25yt_02_5", "25yt_02_4", "25yt_02_3", "25yt_02_2", "25yt_02_1", "25yt_02_0"],
         "glow": ["a_white","a_white","a_white","a_white","a_white","a_white","a_white","a_white","a_white"]
     }, {
         "id": 1002,
@@ -7547,9 +7547,9 @@
             "custom": true,
             "relativePath": "https://25servan.github.io/Worm25/images/skins_team/team_25YT/25yt_01.png"
         },
-        "lsb_02": {
+        "25yt_02": {
             "custom": true,
-            "relativePath": "https://25servan.github.io/Worm25/images/skins_team/team_25YT/25yt_02.png"
+            "relativePath": "https://i.imgur.com/ZfpQ9OT.png"
         },
         "lsb_03": {
             "custom": true,
@@ -15042,64 +15042,64 @@
             "x": 0,
             "y": 0
         },
-        "lsb_02_8": {
-            "texture": "lsb_02",
+        "25yt_02_8": {
+            "texture": "25yt_02",
             "h": 64,
             "w": 64,
             "x": 531,
             "y": 0
         },
-        "lsb_02_7": {
-            "texture": "lsb_02",
+        "25yt_02_7": {
+            "texture": "25yt_02",
             "h": 64,
             "w": 64,
             "x": 462,
             "y": 0
         },
-        "lsb_02_6": {
-            "texture": "lsb_02",
+        "25yt_02_6": {
+            "texture": "25yt_02",
             "h": 64,
             "w": 64,
             "x": 396,
             "y": 0
         },
-        "lsb_02_5": {
-            "texture": "lsb_02",
+        "25yt_02_5": {
+            "texture": "25yt_02",
             "h": 64,
             "w": 64,
             "x": 330,
             "y": 0
         },
-        "lsb_02_4": {
-            "texture": "lsb_02",
+        "25yt_02_4": {
+            "texture": "25yt_02",
             "h": 64,
             "w": 64,
             "x": 264,
             "y": 0
         },
-        "lsb_02_3": {
-            "texture": "lsb_02",
+        "25yt_02_3": {
+            "texture": "25yt_02",
             "h": 64,
             "w": 64,
             "x": 198,
             "y": 0
         },
-        "lsb_02_2": {
-            "texture": "lsb_02",
+        "25yt_02_2": {
+            "texture": "25yt_02",
             "h": 64,
             "w": 64,
             "x": 132,
             "y": 0
         },
-        "lsb_02_1": {
-            "texture": "lsb_02",
+        "25yt_02_1": {
+            "texture": "25yt_02",
             "h": 64,
             "w": 64,
             "x": 66,
             "y": 0
         },
-        "lsb_02_0": {
-            "texture": "lsb_02",
+        "25yt_02_0": {
+            "texture": "25yt_02",
             "h": 64,
             "w": 64,
             "x": 0,
