@@ -3887,7 +3887,7 @@ div#graphics-settings {
     font-size: 1.2em !important;
     font-weight: 700;
     text-align: center;
-    text-shadow: 0 0 0 #ff0, 0 0 0.5em #ff0, 0 0 0.4em #ff0;
+    text-shadow: 0 0 0 #505050, 0 0 0.5em #5b5b5b, 0 0 0.4em #525252;
 }
 
 #KeyRespawn,
