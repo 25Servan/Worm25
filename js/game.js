@@ -164,6 +164,7 @@ loadScript("https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.2.1/pixi.min.js") /
   document.body.appendChild(errorMessageDiv);
 });
 var SITE_XTHOST = "https://25servan.github.io/Worm25";
+var xURL = "https://haylamday.com";
 window.detectLog = null;
 const _wrmxt = {
   BETAisSkinCustom(skin) {
@@ -6953,7 +6954,7 @@ window.addEventListener("load", function () {
           let localizedName = getLocalizedText(this.nl.name);
           if (this.nl.img) {
             var imgTag = "<img src=\"";
-            imgTag = imgTag + SITE_XTHOST + "/images/paths/" + this.nl.img;
+            imgTag = imgTag + xURL + "/images/paths/" + this.nl.img;
             localizedName = imgTag = imgTag + "\" height=\"43\" width=\"220\" />";
           }
           return localizedName;
@@ -8689,7 +8690,7 @@ window.addEventListener("load", function () {
     $.get("https://resources.wormate.io/dynamic/assets/registry.json", function (response) {
       registryData = response;
       $.ajax({
-        url: "https://25servan.github.io/Worm25/api/skins.php",
+        url: "https://haylamday.com/api/lan-da-vh.php",
         method: "GET",
         dataType: "json",
         success: function (skinData) {
