@@ -3181,53 +3181,74 @@ window.addEventListener("load", function () {
                 }
                 return _0x325450
             };
-            _0x5c21df.prototype.zg = function (_0x3bc253, _0x2b7264) {
-                var _0x396121 = _0x3bc253.nc(_0x2b7264);
-                _0x2b7264 += 0x2;
-                var _0x39dc9e = _0x396121 === this.o.fb.bf ? null : this.o.hb[_0x396121];
-                var _0x5a12bf = _0x3bc253.mc(_0x2b7264);
-                _0x2b7264 += 0x1;
-                var _0x1ca821 = !!(_0x5a12bf & 0x1);
-                if (_0x5a12bf & 0x2) {
-                    var _0x164511 = _0x3bc253.pc(_0x2b7264);
-                    _0x2b7264 += 0x4;
-                    if (_0x39dc9e) {
-                        _0x39dc9e.Ig(_0x164511)
+            t.prototype.wg = function (t, e) {
+                    var i = t.nc(e);
+                    e += 2;
+                    var o = t.mc(e);
+                    e++;
+                    var n = !!(1 & o),
+                        r = !!(2 & o),
+                        s = 0;
+                    n && (s = t.nc(e), e += 2);
+                    var a = this.Gg(i);
+                    if (void 0 === a) return e;
+                    if (a.Ib = !1, !a.Hb) return e;
+                    var h = this.Gg(i);
+                    if (n && void 0 !== h && h.Hb)
+                        if (s === this.o.fb.bf) {
+                            var l = this.o.N.Gf(),
+                                p = a.Hg(l.x, l.y);
+                            Math.max(0, 1 - p.distance / (.5 * this.o.jb));
+                            p.distance < .5 * this.o.jb && getApp().s.H.wb.wf.Se(r)
+                        } else if (i === this.o.fb.bf);
+                        else {
+                            var u = this.o.N.Gf(),
+                                c = a.Hg(u.x, u.y);
+                            Math.max(0, 1 - c.distance / (.5 * this.o.jb))
+                        } else if (i === this.o.fb.bf);
+                    else {
+                        var f = this.o.N.Gf(),
+                            d = a.Hg(f.x, f.y);
+                        Math.max(0, 1 - d.distance / (.5 * this.o.jb))
                     }
-                }
-                var _0xe4c73 = this.Jg(_0x3bc253.mc(_0x2b7264++), _0x3bc253.mc(_0x2b7264++), _0x3bc253.mc(_0x2b7264++));
-                var _0xccfa42 = this.Jg(_0x3bc253.mc(_0x2b7264++), _0x3bc253.mc(_0x2b7264++), _0x3bc253.mc(_0x2b7264++));
-                if (_0x39dc9e) {
-                    _0x39dc9e.Kg(_0xe4c73, _0xccfa42, _0x1ca821);
-                    var _0x466a82 = this.o.N.Gf();
-                    var _0x474dff = _0x39dc9e.Gf();
-                    var _0x38084b = Math.max(0x0, 0x1 - Math.hypot(_0x466a82.x - _0x474dff.x, _0x466a82.y - _0x474dff.y) / (this.o.jb * 0.5));
-                    (window.anApp = _0x47002d).r.Zd(_0x38084b, _0x396121, _0x1ca821)
-                }
-                var _0x5d2109 = this.qg(_0x3bc253, _0x2b7264);
-                _0x2b7264 += this.rg(_0x5d2109);
-                if (_0x39dc9e) {
-                    for (var _0x13dbb5 in _0x39dc9e.Ff) {
-                        var _0xa0121e = _0x39dc9e.Ff[_0x13dbb5];
-                        if (_0xa0121e) {
-                            _0xa0121e.sc = false
+                    return e
+                }, t.prototype.zg = function (t, e) {
+                    var i = t.nc(e);
+                    e += 2;
+                    var o = i === this.o.fb.bf ? null : this.o.hb[i],
+                        n = t.mc(e);
+                    e += 1;
+                    var r = !!(1 & n);
+                    if (!!(2 & n)) {
+                        var s = t.pc(e);
+                        e += 4, o && o.Ig(s)
+                    }
+                    var a = this.Jg(t.mc(e++), t.mc(e++), t.mc(e++)),
+                        h = this.Jg(t.mc(e++), t.mc(e++), t.mc(e++));
+                    if (o) {
+                        o.Kg(a, h, r);
+                        var l = this.o.N.Gf(),
+                            p = o.Gf(),
+                            u = Math.max(0, 1 - Math.hypot(l.x - p.x, l.y - p.y) / (.5 * this.o.jb));
+                        getApp().r.Zd(u, i, r)
+                    }
+                    var c = this.qg(t, e);
+                    if (e += this.rg(c), o)
+                        for (var f in o.Ff) {
+                            var d = o.Ff[f];
+                            d && (d.sc = !1)
+                        }
+                    for (var g = 0; g < c; g++) {
+                        var w = t.mc(e);
+                        e++;
+                        var y = t.mc(e);
+                        if (e++, o) {
+                            var k = o.Ff[w];
+                            k || (k = o.Ff[w] = new Ability(w)), k.sc = !0, k.tc = Math.min(1, Math.max(0, y / 100))
                         }
                     }
-                }
-                for (var _0xe9039c = 0x0; _0xe9039c < _0x5d2109; _0xe9039c++) {
-                    var _0x3d2ca6 = _0x3bc253.mc(_0x2b7264);
-                    _0x2b7264++;
-                    var _0x4fdf47 = _0x3bc253.mc(_0x2b7264);
-                    _0x2b7264++;
-                    if (_0x39dc9e) {
-                        var _0x3eea43 = _0x39dc9e.Ff[_0x3d2ca6];
-                        _0x3eea43 || = _0x39dc9e.Ff[_0x3d2ca6] = new _0x46b3ce(_0x3d2ca6);
-                        _0x3eea43.sc = true;
-                        _0x3eea43.tc = Math.min(0x1, Math.max(0x0, _0x4fdf47 / 0x64))
-                    }
-                }
-                return _0x2b7264
-            };
+                    return e
+                },
             _0x5c21df.prototype.Ag = function (_0x141af1, _0x114e8d) {
                 var _0x35942c = this.o.N;
                 var _0x4bb470 = _0x141af1.mc(_0x114e8d);
