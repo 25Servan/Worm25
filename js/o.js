@@ -7367,8 +7367,8 @@ window.addEventListener("load", function () {
             'oa': false,
             'qk': false
         };
-        var _0xdf83 = _0x248efb[window.ENV];
-        _0xdf83 || = _0x248efb.main;
+        var env = ENV_MAP[window.ENV];
+        env || (env = ENV_MAP.main),
         $(function () {
             FastClick.attach(document.body)
         });
