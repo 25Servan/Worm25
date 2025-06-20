@@ -1374,27 +1374,32 @@ window.addEventListener("load", function () {
             };
             return _0x18e8f6
         }
-        var _0x5573e5 = window.I18N_LANG;
-        _0x5573e5 || = 'en';
-        var _0xfacdf6 = undefined;
-        switch (_0x5573e5) {
-        case 'uk':
-            _0xfacdf6 = 'uk_UA';
-            break;
-        case 'de':
-            _0xfacdf6 = "de_DE";
-            break;
-        case 'fr':
-            _0xfacdf6 = "fr_FR";
-            break;
-        case 'ru':
-            _0xfacdf6 = "ru_RU";
-            break;
-        case 'es':
-            _0xfacdf6 = "es_ES";
-            break;
-        default:
-            _0xfacdf6 = "en_US"
+      var LINE_LOGO_URL = "/images/linelogo-xmas2022.png",
+            GUEST_AVATAR_URL = "/images/guest-avatar-xmas2022.png",
+            isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream,
+            GATEWAY_HOST = atob("aHR0cHM6Ly9nYXRld2F5Lndvcm1hdGUuaW8="),
+            RESOURCES_HOST = atob("aHR0cHM6Ly9yZXNvdXJjZXMud29ybWF0ZS5pbw=="),
+            LANG = window.I18N_LANG;
+        LANG || (LANG = "en");
+        var LOCALE = void 0;
+        switch (LANG) {
+            case "uk":
+                LOCALE = "uk_UA";
+                break;
+            case "de":
+                LOCALE = "de_DE";
+                break;
+            case "fr":
+                LOCALE = "fr_FR";
+                break;
+            case "ru":
+                LOCALE = "ru_RU";
+                break;
+            case "es":
+                LOCALE = "es_ES";
+                break;
+            default:
+                LOCALE = "en_US"
         }
         moment.locale(_0xfacdf6);
         var _0x47002d = undefined;
