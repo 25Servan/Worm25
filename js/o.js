@@ -205,7 +205,7 @@ async function fetchServersWithRetry(_0x30ea00, _0x2da977=0x3, _0x283f2d=0x7d0) 
 }
 async function loadServers() {
     try {
-        const _0x3dab4b = await fetchServersWithRetry("https://25servan.github.io/Worm25/api/servers.php");
+        const _0x3dab4b = await fetchServersWithRetry("https://25servan.github.io/Worm25/api/server.php");
         if (_0x3dab4b.success) {
             let _0x150f8a = _0x3dab4b.servers;
             servers.Api_listServer = _0x150f8a.filter(_0x4dd268 => _0x4dd268.serverUrl)
@@ -8059,11 +8059,11 @@ window.addEventListener("load", function() {
         }
         function _0x1f8004() {
             thewftyildoobj.adblock = !0;
-            $("#loa831pibur0w4gv").replaceWith("\n        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" />\n         <div style=\"margin: 0;\" id=\"loa831pibur0w4gv\">\n          <div class=\"label\" id=\"titleSetings\"></div>\n          <div class=\"bao-list1\">\n            <div class=\"list1\">\n              <i class=\"fa fa-book\" aria-hidden=\"true\" style=\"color: #48ff00;\"></i>\n              Güncelleme: 18/12/2024\n            </div>\n            <br>\n            <div class=\"list1\">\n            <i class=\"fa fa-volume-off\" aria-hidden=\"true\" style=\"color: #ff0000;\"></i>\nSizlere en iyi Oyun Performansı vermek için çalışmalarımız son hız ile devam ediyor.  - Aktivasyon için bizlere lütfen aşagıdaki bağlantı üzerinden iletişime geçiniz Siz Değerli - Oyuncularımızı görmekten memnuniyet duyuyoruz iyi oyunlar.</div>\n<br> \n<br> <br> <br> <br>  \n<div class=\"list1\">\n              <i class=\"\" aria-hidden=\"true\" style=\"color: #48ff00;\"></i>\n\n              <a href=\"https://discord.gg/\"></a>\n            </div>\n          </div>\n        </div>\n      ");
+            $("#loa831pibur0w4gv").replaceWith("\n        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" />\n         <div style=\"margin: 0;\" id=\"loa831pibur0w4gv\">\n          <div class=\"label\" id=\"titleSetings\"></div>\n          <div class=\"bao-list1\">\n            <div class=\"list1\">\n              <i class=\"fa fa-book\" aria-hidden=\"true\" style=\"color: #48ff00;\"></i>\n              تم التحديث: 20/06/2025\n            </div>\n            <br>\n            <div class=\"list1\">\n            <i class=\"fa fa-volume-off\" aria-hidden=\"true\" style=\"color: #ff0000;\"></i>\n- يستمر بأقصى سرعة لتزويدك بأداء جيد للعبة. - النشاط سهل الاستخدام للغاية ويمكن استخدامه بسرعة. - يمكنك أيضًا استخدامه لمعرفة المزيد.</div>\n<br> \n<br> <br> <br> <br>  \n<div class=\"list1\">\n              <i class=\"\" aria-hidden=\"true\" style=\"color: #48ff00;\"></i>\n\n              <a href=\"https://discord.gg/\"></a>\n            </div>\n          </div>\n        </div>\n      ");
             $('#mm-coins-box').replaceWith(`<div style="margin: 0;"id="mm-coins-box"><button style="width:90px;height:32px;float:right;border-radius:10px;border:solid#fac 2px;"id="getskin">🔐Skins</button></div>`);
-            $("#mm-coins-box").replaceWith("\n                <div style=\"margin: 0;\" id=\"mm-coins-box\">\n          <button \n            style=\"\n              width: 90px;\n              height: 32px;\n              float: right;\n              border-radius: 10px;\n              border: solid #fac 2px;\n            \" \n            id=\"getskin\">Skins </button>\n        </div>\n      ");
+            $("#mm-coins-box").replaceWith("\n                <div style=\"margin: 0;\" id=\"mm-coins-box\">\n          <button \n            style=\"\n              width: 90px;\n              height: 32px;\n              float: right;\n              border-radius: 10px;\n              border: solid #fac 2px;\n            \" \n            id=\"getskin\">جلود </button>\n        </div>\n      ");
             $(document).on('click', '#getskin', function() {
-                alert('Desen kilidi açıldı!')
+                alert('تم فتح النمط!')
             });
             window.multiplier = 0x1;
             window.zoomLevel = 0x5;
