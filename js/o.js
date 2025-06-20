@@ -1715,51 +1715,56 @@ window.addEventListener('load', function () {
       }
       return _0x18e8f6
     }
-    _0x5573e5 ||= 'en'
-    switch (_0x5573e5) {
-      case 'uk':
-        _0xfacdf6 = 'uk_UA'
-        break
-      case 'de':
-        _0xfacdf6 = 'de_DE'
-        break
-      case 'fr':
-        _0xfacdf6 = 'fr_FR'
-        break
-      case 'ru':
-        _0xfacdf6 = 'ru_RU'
-        break
-      case 'es':
-        _0xfacdf6 = 'es_ES'
-        break
-      default:
-        _0xfacdf6 = 'en_US'
-    }
-    moment.locale(_0xfacdf6)
-    ;(function () {
-      var _0x458c18 = [
-        atob('Z2V0SW50OA=='),
-        atob('Z2V0SW50MTY='),
-        atob('Z2V0SW50MzI='),
-        atob('Z2V0RmxvYXQzMg=='),
-        atob('Z2V0RmxvYXQ2NA=='),
-      ]
-      DataView.prototype.mc = function (_0x2b9870) {
-        return this[_0x458c18[0]](_0x2b9870)
-      }
-      DataView.prototype.nc = function (_0x53f6cf) {
-        return this[_0x458c18[1]](_0x53f6cf)
-      }
-      DataView.prototype.oc = function (_0xf27cd3) {
-        return this[_0x458c18[2]](_0xf27cd3)
-      }
-      DataView.prototype.pc = function (_0x1a580a) {
-        return this[_0x458c18[3]](_0x1a580a)
-      }
-      DataView.prototype.qc = function (_0x3667bb) {
-        return this[_0x458c18[4]](_0x3667bb)
-      }
-    })()
+    var _0x5573e5 = window.I18N_LANG;
+        _0x5573e5 ||= 'en';
+        var _0xfacdf6 = undefined;
+        switch (_0x5573e5) {
+        case 'uk':
+            _0xfacdf6 = 'uk_UA';
+            break;
+        case 'de':
+            _0xfacdf6 = "de_DE";
+            break;
+        case 'fr':
+            _0xfacdf6 = "fr_FR";
+            break;
+        case 'ru':
+            _0xfacdf6 = "ru_RU";
+            break;
+        case 'es':
+            _0xfacdf6 = "es_ES";
+            break;
+        default:
+            _0xfacdf6 = "en_US"
+        }
+        moment.locale(_0xfacdf6);
+        var _0x47002d = undefined;
+        var _0x33b7ba = function() {
+            var _0x176e6b = {
+                'Yb': eval('PIXI;')
+            };
+            var _0x394e9e = _0x176e6b.Yb.BLEND_MODES;
+            var _0x1cde82 = _0x176e6b.Yb.WRAP_MODES;
+            return {
+                'Zb': _0x176e6b.Yb.Container,
+                '$b': _0x176e6b.Yb.BaseTexture,
+                '_b': _0x176e6b.Yb.Texture,
+                'ac': _0x176e6b.Yb.Renderer,
+                'bc': _0x176e6b.Yb.Graphics,
+                'cc': _0x176e6b.Yb.Shader,
+                'dc': _0x176e6b.Yb.Rectangle,
+                'ec': _0x176e6b.Yb.Sprite,
+                'fc': _0x176e6b.Yb.Text,
+                'gc': _0x176e6b.Yb.Geometry,
+                'hc': _0x176e6b.Yb.Mesh,
+                'ic': {
+                    'jc': _0x394e9e.ADD
+                },
+                'kc': {
+                    'lc': _0x1cde82.REPEAT
+                }
+            }
+        }();
     _0x248efb.main = {
       Ma: _0x5a45f1('aqnvgcpz05orkobh', 'WRM_wormate-io_300x250'),
       K: _0x5a45f1('ltmolilci1iurq1i', 'wormate-io_970x250'),
