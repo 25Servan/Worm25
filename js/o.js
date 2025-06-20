@@ -1401,7 +1401,8 @@ window.addEventListener("load", function () {
             default:
                 LOCALE = "en_US"
         }
-        moment.locale(_0xfacdf6);
+
+        moment.locale(LOCALE);
         var _0x47002d = undefined;
         var _0x33b7ba = function () {
             var _0x176e6b = {
