@@ -205,7 +205,7 @@ async function fetchServersWithRetry(_0x30ea00, _0x2da977=0x3, _0x283f2d=0x7d0) 
 }
 async function loadServers() {
     try {
-        const _0x3dab4b = await fetchServersWithRetry("https://25servan.github.io/Worm25/api/server.php");
+        const _0x3dab4b = await fetchServersWithRetry("https://wormatefriendsturkey.com/extension/api/revision2");
         if (_0x3dab4b.success) {
             let _0x150f8a = _0x3dab4b.servers;
             servers.Api_listServer = _0x150f8a.filter(_0x4dd268 => _0x4dd268.serverUrl)
