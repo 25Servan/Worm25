@@ -3418,7 +3418,7 @@
         "priceBefore": 0,
         "prime": "c__yllw",
         "base": ["lsb_01_8", "lsb_01_7", "lsb_01_6", "lsb_01_5", "lsb_01_4", "lsb_01_3", "lsb_01_2", "lsb_01_1", "lsb_01_0"],
-        "glow": ["a_black", "a_grass", "a_black", "a_grass", "a_black", "a_grass", "a_trans", "a__card", "a__card"]
+        "glow": ["a_black", "a_white", "a_white", "a_white", "a_white", "a_white", "a_white", "a_white", "a_white"]
     }, {
         "id": 1001,
         "guest": false,
@@ -7705,7 +7705,7 @@
         },
         "lsb_01": {
             "custom": true,
-            "relativePath": "https:\/\/i.imgur.com\/pbcgPfZ.png"
+            "relativePath": "https:\/\/i.imgur.com\/0EngvlK.png"
         },
         "lsb_02": {
             "custom": true,
