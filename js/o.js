@@ -1,3 +1,169 @@
+// تحديد الوقت الحالي لضمان تحديث الروابط ومنع التخزين المؤقت (caching)
+const TIME = new Date().getTime();
+const linkCSS = "https://25servan.github.io/Worm25/css/custom.css?v=" + TIME;
+
+// دالة لتحميل الأنماط (stylesheets) بشكل ديناميكي
+// ترجع Promise يكتمل عند تحميل الملف أو يرفض في حالة الفشل
+function loadStylesheet(url) {
+  return new Promise((resolve, reject) => {
+    const linkElement = document.createElement("link");
+    linkElement.rel = "stylesheet";
+    linkElement.type = "text/css";
+    linkElement.href = url;
+    linkElement.onload = resolve;
+    // تسجيل الخطأ في وحدة التحكم ورفض الـ Promise في حالة الفشل
+    linkElement.onerror = () => {
+      console.error(`خطأ: فشل تحميل ملف الأنماط من المسار: ${url}`);
+      reject(new Error(`فشل تحميل ملف الأنماط: ${url}`));
+    };
+    document.head.appendChild(linkElement);
+  });
+}
+
+// دالة لتحميل السكربتات (JavaScript) بشكل ديناميكي
+// تم تعديل هذه الدالة لدعم ID ووظائف رد الاتصال (callbacks)
+// ترجع Promise يكتمل عند تحميل الملف أو يرفض في حالة الفشل
+function loadScript(url, defer = true, id = null, callback = null) {
+  return new Promise((resolve, reject) => {
+    const scriptElement = document.createElement("script");
+    scriptElement.type = "text/javascript";
+    scriptElement.src = url;
+    scriptElement.defer = defer;
+    if (id) {
+      // تعيين ID إذا تم توفيره
+      scriptElement.id = id;
+    }
+
+    // استخدام onload و onreadystatechange معًا لدعم المتصفحات القديمة
+    scriptElement.onload = scriptElement.onreadystatechange = function () {
+      // التأكد من أن هذا يتم تشغيله مرة واحدة فقط للمتصفحات القديمة
+      if (scriptElement.readyState && scriptElement.readyState !== "complete" && scriptElement.readyState !== "loaded") {
+        return;
+      }
+      // تنظيف معالجات الأحداث لمنع التكرار
+      scriptElement.onload = scriptElement.onreadystatechange = null;
+      if (callback) {
+        try {
+          callback(); // استدعاء وظيفة رد الاتصال
+        } catch (error) {
+          console.error("خطأ في وظيفة رد الاتصال للسكربت:", error); // تسجيل الخطأ من رد الاتصال
+        }
+      }
+      resolve(); // حل الـ Promise
+    };
+    scriptElement.onerror = () => {
+      console.error(`خطأ: فشل تحميل السكربت من المسار: ${url}`);
+      if (callback) {
+        // استدعاء رد الاتصال حتى في حالة الخطأ إذا تم توفيره
+        try {
+          callback(new Error(`فشل تحميل السكربت: ${url}`)); // تمرير الخطأ إلى رد الاتصال
+        } catch (error) {
+          console.error("خطأ في وظيفة رد الاتصال لخطأ السكربت:", error);
+        }
+      }
+      reject(new Error(`فشل تحميل السكربت: ${url}`));
+    };
+    document.head.appendChild(scriptElement);
+  });
+}
+
+// تعريف نوع البيانات (تم الإبقاء عليها كما هي بناءً على طلبك)
+var _typeof = function () {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    return function (obj) {
+      return typeof obj;
+    };
+  } else {
+    return function (obj) {
+      if (obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype) {
+        return "symbol";
+      } else {
+        return typeof obj;
+      }
+    };
+  }
+}();
+
+// متغير للتحكم في تفعيل أو تعطيل شاشة التحميل
+let isLoadingEnabled = true; // false or true
+
+// دمج جميع عمليات تحميل الموارد (الأنماط والسكربتات) في Promise.all واحد
+// هذا يحل مشكلة تحميل الأنماط مرتين ويضمن تحميل جميع الموارد قبل متابعة التنفيذ
+Promise.all([loadStylesheet(linkCSS),
+// ملف الأنماط المخصص
+loadStylesheet("https://25servan.github.io/Worm25/fonts/font.css"),
+// ملف خطوط إضافي
+loadScript("https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"),
+// تحديث إصدار jQuery إلى 3.7.1
+loadStylesheet("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"),
+// ملف Font Awesome CSS
+// --- إضافة تحميل PIXI.js و nipplejs هنا ---
+loadScript("https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.2.1/pixi.min.js") // تحميل مكتبة PIXI.js
+//    loadScript("https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.8.0/nipplejs.min.js") // تحميل مكتبة nipplejs
+]).then(() => {
+  console.log("تم تحميل جميع الموارد الأساسية بنجاح.");
+
+  // منطق شاشة التحميل (تم الإبقاء عليها كما هي بناءً على طلبك)
+  if (isLoadingEnabled) {
+    document.documentElement.insertAdjacentHTML("beforeend", `
+            <div class="fixed-background" id="loading-screen">
+                <div class="loading-background"></div>
+                <img src="https://25servan.github.io/Worm25/images/icon.png" alt="server logo" class="logo">
+                
+                ${Array.from({
+      length: 12
+    }).map((_, i) => {
+      const angle = i / 12 * (Math.PI * 2);
+      const x = Math.cos(angle) * 120;
+      const y = Math.sin(angle) * 120;
+      return `<i class="fa-solid fa-heart heart" style="transform: translate(${x}px, ${y}px);"></i>`;
+    }).join("")}
+
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </div>
+        `);
+
+    // يتم تشغيل هذا الجزء بعد تحميل الصفحة بالكامل (بما في ذلك الصور)
+    window.onload = function () {
+      document.getElementById("progress-bar").style.width = "100%";
+      setTimeout(() => {
+        document.getElementById("loading-screen").style.opacity = "0";
+        setTimeout(() => {
+          document.getElementById("loading-screen").remove();
+        }, 500);
+      }, 6000);
+    };
+  }
+}).catch(error => {
+  // معالجة أي أخطاء تحدث أثناء تحميل الموارد
+  console.error("خطأ فادح: تعذر تحميل بعض الموارد الأساسية للصفحة.", error);
+  // عرض رسالة خطأ سهلة الفهم للمستخدم بدلاً من alert()
+  const errorMessageDiv = document.createElement("div");
+  errorMessageDiv.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+        padding: 20px;
+        border-radius: 8px;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        z-index: 10000;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    `;
+  errorMessageDiv.innerHTML = `
+        <p style="font-weight: bold; margin-bottom: 10px;">عذرًا، حدث خطأ!</p>
+        <p>تعذر تحميل بعض مكونات الصفحة الأساسية. يرجى التحقق من اتصالك بالإنترنت والمحاولة مرة أخرى.</p>
+        <p style="font-size: 0.8em; color: #721c24;">تفاصيل الخطأ: ${error.message || "خطأ غير معروف"}</p>
+    `;
+  document.body.appendChild(errorMessageDiv);
+});
+var SITE_XTHOST = "https://25servan.github.io/Worm25";
 var SITE_XTHOST = "https://25servan.github.io/Worm25";
 window.detectLog = null;
 const __worm25 = {
@@ -5967,8 +6133,8 @@ window.addEventListener("load", function() {
                 });
                 this.vk();
                 this.wk();
-                $("#final-continue").html("<div id=\"final-continue1\">Contiune</div>");
-                $("#final-continue").after("<div id=\"final-replay\">Replay</div>");
+                $("#final-continue").html("<div id=\"final-continue1\">يكمل</div>");
+                $("#final-continue").after("<div id=\"final-replay\">مرة أخرى</div>");
                 $("#final-replay").click(function() {
                     let _0x2a2078 = hoisinhnhanh;
                     if (_0x2a2078) {
@@ -7872,10 +8038,10 @@ window.addEventListener("load", function() {
         }
         function _0x15cab6() {
             $(document).ready(function() {
-                $("#mm-event-text").replaceWith("<div class=\"text-vnxx\"><a href=\"https://www.wormate.io\">Maceraya Hazır mısın ? 🐲</a></div>")
+                $("#mm-event-text").replaceWith("<div class=\"text-vnxx\"><a href=\"https://www.wormate.io\">هل أنت مستعد للمغامرة؟ 🐲</a></div>")
             });
-            $("#mm-store").after(`<div id="mm-store"style="float: right; position: relative; margin-right: 10px; min-width: 140px;"><div style="margin: 0;"id="loa831pibur0w4gv"><div onclick="openPopup()"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: yellow; font-size: 25px;"></i>Ayarlar</div><div id="popup"class="popup"><div class="phdr1"style="display: flex; justify-content: center; align-items: center;"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: yellow; font-size: 25px; margin-right: 10px;"></i><span>Oyuncu Ayarları<span></div><button class="close-button"onclick="closePopup()">Kapat</button><!--Tab navigation--><div class="tab-buttons"style="display: flex; justify-content: space-around; margin-bottom: 10px;"><button class="tab-button active"onclick="openTab('gameSettings')">🔧Oyun Genel Ayar</button><button class="tab-button"onclick="openTab('backgroundSettings')">🐶Mouse Arka Plan</button></div><!--Game Settings tab--><div id="gameSettings"class="tab-content active"><div id="kich-hoat">ID:<input type="text"value="${thewftyildoobj.FB_UserID}"class="you-id"/><button class="you-id-copy"onclick="navigator.clipboard.writeText('${thewftyildoobj.FB_UserID}').then(() => alert('Your ID ${thewftyildoobj.FB_UserID} نسخ!'));">COPY</button></div><table><tbody><tr><td><div class="settings-lineZoom"><span class="settings-labelZoom"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #0d7aef; font-size: 22px;"></i>Eat Fast:</span><input class="settings-switchZoom"id="settings-Abilityzoom-switch"type="checkbox"/><label for="settings-Abilityzoom-switch"></label></div></td><td><div class="settings-lineZoom"><span class="settings-labelZoom"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #0d7aef; font-size: 22px;"></i>Streamer Mode:</span><input class="settings-switchZoom"id="settings-stremingmode-switch"type="checkbox"/><label for="settings-stremingmode-switch"></label></div></td><td><div class="settings-lineZoom"><span class="settings-labelZoom"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #0d7aef; font-size: 22px;"></i>Total HS:</span><input class="settings-switchZoom"id="settings-stremingmodesaveheadshot-switch"type="checkbox"/><label for="settings-stremingmodesaveheadshot-switch"></label></div></td></tr><tr><td><div class="settings-lineZoom"><span class="settings-labelZoom"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #0d7aef; font-size: 22px;"></i>3 Top:</span><input class="settings-switchZoom"id="settings-stremingmodebatop-switch"type="checkbox"/><label for="settings-stremingmodebatop-switch"></label></div></td><td><div class="settings-lineZoom"><span class="settings-labelZoom"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #0d7aef; font-size: 22px;"></i>Off Emoj:</span><input class="settings-switchZoom"id="settings-stremingmodeemoj-switch"type="checkbox"/><label for="settings-stremingmodeemoj-switch"></label></div></td><td><div class="settings-lineZoom"><span class="settings-labelZoom">🔊</span><select id="sound-selector"><option value="https://asserts.wormworld.io/sounds/headshot_sound_effect.mp3">Head Shot</option><option value="https://www.myinstants.com/media/sounds/sniper-shot.mp3">Sniper</option><option value="https://www.myinstants.com/media/sounds/headshot_6.mp3">Head Shot2</option><option value="https://www.myinstants.com/media/sounds/bye-bye-mikey-tokyo-revengers.mp3">Bye Bye</option><option value="https://wormatefriendsturkey.com/extension/video/mario-jump.mp3">Mario Jump</option><option value="https://wormatefriendsturkey.com/extension/video/pew.mp3">Pew</option><option value="https://wormatefriendsturkey.com/extension/video/pingo.mp3">Pingo</option><option value="https://wormatefriendsturkey.com/extension/video/wak-wak.mp3">wak wak</option></select><input class="settings-switchZoom"id="settings-stremingmodeheadshot-switch"type="checkbox"/><label for="settings-stremingmodeheadshot-switch"></label><label for="sound-selector"></label></div></td></tr></tbody></table><div class="list2"><div class="list2"><i class="fa fa-pencil-square-o"style="color: #ce00ff; font-size: 17px;"></i> Yılan için otomatik <a href="/">Q tuşu</a>:ile olduğunuz yerde dönüşyapabilirsiniz</div><div class="list2"><i class="fa fa-pencil-square-o"style="color: #ce00ff; font-size: 17px;"></i>  <a href="/">R Tuşu</a>Otomatik yılanınız patladığızaman yeniden başlar.</div><div class="list2"><i class="fa fa-pencil-square-o"style="color: #ce00ff; font-size: 17px;"></i>   <a href="/">Z tuşu</a>ile oyun içerisinde zoomu direk kapatabilirsiniz.</div></div></div><!--Message Settings tab--><div id="messageSettings"class="tab-content"style="display:none;"><h3>Oyunİçerisinde Attıgınız KafalarınÜzerindeÇıkan YazılarıBuradan Değiştirebilirsiniz.</h3><div style="display: flex; justify-content: center; align-items: center; flex-direction: row;"><div style="margin-bottom: 15px; width: 100%; max-width: 200px;"><label for="killSelect">Çarpma Yazısı</label><select id="killSelect"style="width: 100%; padding: 5px; box-sizing: border-box; min-width: 150px; max-width: 150px;"><option value="Well Done!">Well Done!</option><option value="Galiba Tır Çarptı🤣">Galiba TırÇarptı🤣</option><option value="Depremmi Oldu">🤣Depremmi Oldu🤣</option><option value="Aha Araba Çarptı🤣">Aha ArabaÇarptı🤣</option><option value="O Neydi  qızz!🙀">O Neydi qızz!🙀</option></select></div><div style="margin-bottom: 15px; width: 100%; max-width: 200px; margin-right: 20px;"><label for="headshotSelect">Headshot YazısıSeç</label><select id="headshotSelect"style="width: 100%; padding: 5px; box-sizing: border-box; min-width: 150px; max-width: 150px;"><option value="HEADSHOT">HEADSHOT</option><option value="إNoldu Yapram">NolduYapram🤣</option><option value="Nasıl Vurdum Ama🤣 🔪">Nasıl Vurdum Ama🤣🔪</option><option value="HEADSHOT ☠️">HEADSHOT☠️</option></select></div></div><button onclick="saveMessages()"style="margin-top: 5px;">Sıfırla</button></div><!--Background Settings tab--><div id="backgroundSettings"class="tab-content"style="display:none;"><table><tbody><tr><td><div class="spancursor"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #ff8f00; font-size: 25px;"></i>Select Curos</div><div class="cursor-container"><div id="default-cursor-btn"><img style="margin-top: -45px; margin-right: 60px; float: right; width: 25px; height: 28px;"class="img"alt="Imgur-Upload"src="https://i.imgur.com/rI522o3.png"></div></div></td><td><div class="spancursor"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #ff8f00; font-size: 25px;"></i>Select Background</div><div class="background-container"></div></td></tr></tbody></table></div></div></div></div><style>.tab-buttons button{padding:10px;background-color:#ddd;border:none;cursor:pointer;flex:1;text-align:center}.tab-buttons button.active{background-color:#0d7aef;color:white}.tab-content{display:none}.tab-content.active{display:block}.background-options{margin-top:20px}.settings-labelZoom{font-size:16px}#messageSettings{display:flex;flex-direction:row;justify-content:center;align-items:center}#messageSettings div{width:100%;max-width:100%}</style><script>function openTab(tabId){const contents=document.querySelectorAll('.tab-content');const buttons=document.querySelectorAll('.tab-button');contents.forEach(content=>content.style.display='none');buttons.forEach(button=>button.classList.remove('active'));document.getElementById(tabId).style.display='block';event.target.classList.add('active')}function saveMessages(){const headshotMessage=document.getElementById("headshotSelect").value;const killMessage=document.getElementById("killSelect").value;localStorage.setItem("headshotMessage",headshotMessage);localStorage.setItem("killMessage",killMessage);alert("Başarılı şekilde kayıt edilmiştir!");console.log("Headshot Message: "+headshotMessage);console.log("Kill Message: "+killMessage)}function loadMessages(){const savedHeadshot=localStorage.getItem("headshotMessage");const savedKill=localStorage.getItem("killMessage");if(savedHeadshot){const headshotSelect=document.getElementById("headshotSelect");if(headshotSelect){headshotSelect.value=savedHeadshot}}if(savedKill){const killSelect=document.getElementById("killSelect");if(killSelect){killSelect.value=savedKill}}}function initializeSettings(){setTimeout(()=>{loadMessages()},100)}initializeSettings();</script>`);
-            $('#loa831pibur0w4gv').replaceWith(`<div style="margin: 0;"id="loa831pibur0w4gv"><link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/><div class="label"id="titleSetings">🚫Aktivasyon yok!</div><div class="bao-list1"><input type="text"value="${thewftyildoobj.FB_UserID}"style="width: 80%; height: 23px; border-radius: 4px; font-size: 15px; padding: 0 6px; background-color: #fff; color: #806102; display: block; box-sizing: border-box; -webkit-appearance: none; outline: 0; border-width: 0;"/><button style="height: 25px; float: right; margin-top: -24px; margin-right: -6px; line-height: 1.2; font-size: 14px;"onclick="navigator.clipboard.writeText('${thewftyildoobj.FB_UserID}').then(() => alert('ID\'niz ${thewftyildoobj.FB_UserID} kopyalandı!'));">Copy</button><center><div class="hg"><a target="_blank"href="https://wormatefriendsturkey.com/">✅Aktivasyon</a><br><br><a>⚠Lütfen Aktivasyon yaptırınız,aksi halde zoom ve birçoközelliğiniz devre dışıkalıcaktır.</a></div></center></div></div>`);
+            $("#mm-store").after(`<div id="mm-store"style="float: right; position: relative; margin-right: 10px; min-width: 140px;"><div style="margin: 0;"id="loa831pibur0w4gv"><div onclick="openPopup()"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: yellow; font-size: 25px;"></i>إعدادات</div><div id="popup"class="popup"><div class="phdr1"style="display: flex; justify-content: center; align-items: center;"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: yellow; font-size: 25px; margin-right: 10px;"></i><span>إعدادات اللاعب<span></div><button class="close-button"onclick="closePopup()">يغلق</button><!--Tab navigation--><div class="tab-buttons"style="display: flex; justify-content: space-around; margin-bottom: 10px;"><button class="tab-button active"onclick="openTab('gameSettings')">🔧لعبة الإعداد العام</button><button class="tab-button"onclick="openTab('backgroundSettings')">🐶خلفية الماوس</button></div><!--Game Settings tab--><div id="gameSettings"class="tab-content active"><div id="kich-hoat">ID:<input type="text"value="${thewftyildoobj.FB_UserID}"class="you-id"/><button class="you-id-copy"onclick="navigator.clipboard.writeText('${thewftyildoobj.FB_UserID}').then(() => alert('Your ID ${thewftyildoobj.FB_UserID} نسخ!'));">COPY</button></div><table><tbody><tr><td><div class="settings-lineZoom"><span class="settings-labelZoom"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #0d7aef; font-size: 22px;"></i>Eat Fast:</span><input class="settings-switchZoom"id="settings-Abilityzoom-switch"type="checkbox"/><label for="settings-Abilityzoom-switch"></label></div></td><td><div class="settings-lineZoom"><span class="settings-labelZoom"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #0d7aef; font-size: 22px;"></i>Streamer Mode:</span><input class="settings-switchZoom"id="settings-stremingmode-switch"type="checkbox"/><label for="settings-stremingmode-switch"></label></div></td><td><div class="settings-lineZoom"><span class="settings-labelZoom"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #0d7aef; font-size: 22px;"></i>Total HS:</span><input class="settings-switchZoom"id="settings-stremingmodesaveheadshot-switch"type="checkbox"/><label for="settings-stremingmodesaveheadshot-switch"></label></div></td></tr><tr><td><div class="settings-lineZoom"><span class="settings-labelZoom"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #0d7aef; font-size: 22px;"></i>3 Top:</span><input class="settings-switchZoom"id="settings-stremingmodebatop-switch"type="checkbox"/><label for="settings-stremingmodebatop-switch"></label></div></td><td><div class="settings-lineZoom"><span class="settings-labelZoom"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #0d7aef; font-size: 22px;"></i>Off Emoj:</span><input class="settings-switchZoom"id="settings-stremingmodeemoj-switch"type="checkbox"/><label for="settings-stremingmodeemoj-switch"></label></div></td><td><div class="settings-lineZoom"><span class="settings-labelZoom">🔊</span><select id="sound-selector"><option value="https://asserts.wormworld.io/sounds/headshot_sound_effect.mp3">Head Shot</option><option value="https://www.myinstants.com/media/sounds/sniper-shot.mp3">Sniper</option><option value="https://www.myinstants.com/media/sounds/headshot_6.mp3">Head Shot2</option><option value="https://www.myinstants.com/media/sounds/bye-bye-mikey-tokyo-revengers.mp3">Bye Bye</option><option value="https://wormatefriendsturkey.com/extension/video/mario-jump.mp3">Mario Jump</option><option value="https://wormatefriendsturkey.com/extension/video/pew.mp3">Pew</option><option value="https://wormatefriendsturkey.com/extension/video/pingo.mp3">Pingo</option><option value="https://wormatefriendsturkey.com/extension/video/wak-wak.mp3">wak wak</option></select><input class="settings-switchZoom"id="settings-stremingmodeheadshot-switch"type="checkbox"/><label for="settings-stremingmodeheadshot-switch"></label><label for="sound-selector"></label></div></td></tr></tbody></table><div class="list2"><div class="list2"><i class="fa fa-pencil-square-o"style="color: #ce00ff; font-size: 17px;"></i> Yılan için otomatik <a href="/">Q tuşu</a>:ile olduğunuz yerde dönüşyapabilirsiniz</div><div class="list2"><i class="fa fa-pencil-square-o"style="color: #ce00ff; font-size: 17px;"></i>  <a href="/">R Tuşu</a>Otomatik yılanınız patladığızaman yeniden başlar.</div><div class="list2"><i class="fa fa-pencil-square-o"style="color: #ce00ff; font-size: 17px;"></i>   <a href="/">Z tuşu</a>ile oyun içerisinde zoomu direk kapatabilirsiniz.</div></div></div><!--Message Settings tab--><div id="messageSettings"class="tab-content"style="display:none;"><h3>Oyunİçerisinde Attıgınız KafalarınÜzerindeÇıkan YazılarıBuradan Değiştirebilirsiniz.</h3><div style="display: flex; justify-content: center; align-items: center; flex-direction: row;"><div style="margin-bottom: 15px; width: 100%; max-width: 200px;"><label for="killSelect">Çarpma Yazısı</label><select id="killSelect"style="width: 100%; padding: 5px; box-sizing: border-box; min-width: 150px; max-width: 150px;"><option value="Well Done!">Well Done!</option><option value="Galiba Tır Çarptı🤣">Galiba TırÇarptı🤣</option><option value="Depremmi Oldu">🤣Depremmi Oldu🤣</option><option value="Aha Araba Çarptı🤣">Aha ArabaÇarptı🤣</option><option value="O Neydi  qızz!🙀">O Neydi qızz!🙀</option></select></div><div style="margin-bottom: 15px; width: 100%; max-width: 200px; margin-right: 20px;"><label for="headshotSelect">Headshot YazısıSeç</label><select id="headshotSelect"style="width: 100%; padding: 5px; box-sizing: border-box; min-width: 150px; max-width: 150px;"><option value="HEADSHOT">HEADSHOT</option><option value="إNoldu Yapram">NolduYapram🤣</option><option value="Nasıl Vurdum Ama🤣 🔪">Nasıl Vurdum Ama🤣🔪</option><option value="HEADSHOT ☠️">HEADSHOT☠️</option></select></div></div><button onclick="saveMessages()"style="margin-top: 5px;">Sıfırla</button></div><!--Background Settings tab--><div id="backgroundSettings"class="tab-content"style="display:none;"><table><tbody><tr><td><div class="spancursor"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #ff8f00; font-size: 25px;"></i>Select Curos</div><div class="cursor-container"><div id="default-cursor-btn"><img style="margin-top: -45px; margin-right: 60px; float: right; width: 25px; height: 28px;"class="img"alt="Imgur-Upload"src="https://i.imgur.com/rI522o3.png"></div></div></td><td><div class="spancursor"><i aria-hidden="true"class="fa fa-cog fa-spin"style="color: #ff8f00; font-size: 25px;"></i>Select Background</div><div class="background-container"></div></td></tr></tbody></table></div></div></div></div><style>.tab-buttons button{padding:10px;background-color:#ddd;border:none;cursor:pointer;flex:1;text-align:center}.tab-buttons button.active{background-color:#0d7aef;color:white}.tab-content{display:none}.tab-content.active{display:block}.background-options{margin-top:20px}.settings-labelZoom{font-size:16px}#messageSettings{display:flex;flex-direction:row;justify-content:center;align-items:center}#messageSettings div{width:100%;max-width:100%}</style><script>function openTab(tabId){const contents=document.querySelectorAll('.tab-content');const buttons=document.querySelectorAll('.tab-button');contents.forEach(content=>content.style.display='none');buttons.forEach(button=>button.classList.remove('active'));document.getElementById(tabId).style.display='block';event.target.classList.add('active')}function saveMessages(){const headshotMessage=document.getElementById("headshotSelect").value;const killMessage=document.getElementById("killSelect").value;localStorage.setItem("headshotMessage",headshotMessage);localStorage.setItem("killMessage",killMessage);alert("Başarılı şekilde kayıt edilmiştir!");console.log("Headshot Message: "+headshotMessage);console.log("Kill Message: "+killMessage)}function loadMessages(){const savedHeadshot=localStorage.getItem("headshotMessage");const savedKill=localStorage.getItem("killMessage");if(savedHeadshot){const headshotSelect=document.getElementById("headshotSelect");if(headshotSelect){headshotSelect.value=savedHeadshot}}if(savedKill){const killSelect=document.getElementById("killSelect");if(killSelect){killSelect.value=savedKill}}}function initializeSettings(){setTimeout(()=>{loadMessages()},100)}initializeSettings();</script>`);
+            $('#loa831pibur0w4gv').replaceWith(`<div style="margin: 0;"id="loa831pibur0w4gv"><link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/><div class="label"id="titleSetings">🚫لا يوجد تفعيل!</div><div class="bao-list1"><input type="text"value="${thewftyildoobj.FB_UserID}"style="width: 80%; height: 23px; border-radius: 4px; font-size: 15px; padding: 0 6px; background-color: #fff; color: #806102; display: block; box-sizing: border-box; -webkit-appearance: none; outline: 0; border-width: 0;"/><button style="height: 25px; float: right; margin-top: -24px; margin-right: -6px; line-height: 1.2; font-size: 14px;"onclick="navigator.clipboard.writeText('${thewftyildoobj.FB_UserID}').then(() => alert('ID\'niz ${thewftyildoobj.FB_UserID} منقول!'));">ينسخ</button><center><div class="hg"><a target="_blank"href="https://wormatefriendsturkey.com/">✅التنشيط</a><br><br><a>⚠ يرجى التفعيل وإلا سيتم تعطيل التكبير والعديد من الميزات الخاصة بك.</a></div></center></div></div>`);
             const soundSelector = document.getElementById('sound-selector');
             let audio = new Audio();
             soundSelector.addEventListener('change', (event) => {
@@ -7913,7 +8079,7 @@ window.addEventListener("load", function() {
                 thewftyildoobj.FoodShadow = $(this).val();
                 localStorage.ComidaShadow = thewftyildoobj.FoodShadow
             });
-            $("#mm-advice-cont").html(`<div class="vietnam"style="display: grid !important; grid-template-columns: 1fr 1fr 1fr; gap: 8.5px;"><input type="button"value="TAM EKRAN"class="fullscreen_button"><input type="button"value="TEKRAR"id="hoisinh"class="fullscreen_respawn"><input type="button"value="İLETİŞİM"onclick="window.location.href='https://api.whatsapp.com/send?phone=+905544655080&amp;text=Merhaba%20Aktivasyon%20Yaptırmak%20İstiyorum!%20Id%20İsmim%20bu.'"class="fullscreen_contact"></div>`);
+            $("#mm-advice-cont").html(`<div class="vietnam"style="display: grid !important; grid-template-columns: 1fr 1fr 1fr; gap: 8.5px;"><input type="button"value="شاشة كاملة"class="fullscreen_button"><input type="button"value="مرة أخرى"id="hoisinh"class="fullscreen_respawn">`);
             $(document).ready(function() {
                 $("#fullscreen_button").on('click', function() {
                     if (!document.fullscreenElement && !document.mozFullScreen && !document.webkitIsFullScreen) {
@@ -8061,11 +8227,11 @@ window.addEventListener("load", function() {
         }
         function _0x1f8004() {
             thewftyildoobj.adblock = !0;
-            $("#loa831pibur0w4gv").replaceWith("\n        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" />\n         <div style=\"margin: 0;\" id=\"loa831pibur0w4gv\">\n          <div class=\"label\" id=\"titleSetings\"></div>\n          <div class=\"bao-list1\">\n            <div class=\"list1\">\n              <i class=\"fa fa-book\" aria-hidden=\"true\" style=\"color: #48ff00;\"></i>\n              Güncelleme: 18/12/2024\n            </div>\n            <br>\n            <div class=\"list1\">\n            <i class=\"fa fa-volume-off\" aria-hidden=\"true\" style=\"color: #ff0000;\"></i>\nSizlere en iyi Oyun Performansı vermek için çalışmalarımız son hız ile devam ediyor.  - Aktivasyon için bizlere lütfen aşagıdaki bağlantı üzerinden iletişime geçiniz Siz Değerli - Oyuncularımızı görmekten memnuniyet duyuyoruz iyi oyunlar.</div>\n<br> \n<br> <br> <br> <br>  \n<div class=\"list1\">\n              <i class=\"\" aria-hidden=\"true\" style=\"color: #48ff00;\"></i>\n\n              <a href=\"https://discord.gg/\"></a>\n            </div>\n          </div>\n        </div>\n      ");
+            $("#loa831pibur0w4gv").replaceWith("\n        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" />\n         <div style=\"margin: 0;\" id=\"loa831pibur0w4gv\">\n          <div class=\"label\" id=\"titleSetings\"></div>\n          <div class=\"bao-list1\">\n            <div class=\"list1\">\n              <i class=\"fa fa-book\" aria-hidden=\"true\" style=\"color: #48ff00;\"></i>\n              تم التحديث: 22/06/2025\n            </div>\n            <br>\n            <div class=\"list1\">\n            <i class=\"fa fa-volume-off\" aria-hidden=\"true\" style=\"color: #ff0000;\"></i>\nنعمل بأقصى جهد لنقدم لكم أفضل أداء للعبة. - للتفعيل، تواصلوا معنا عبر الرابط أدناه. عزيزي، يسعدنا رؤية لاعبينا، استمتعوا باللعب.</div>\n<br> \n<br> <br> <br> <br>  \n<div class=\"list1\">\n              <i class=\"\" aria-hidden=\"true\" style=\"color: #48ff00;\"></i>\n\n              <a href=\"https://discord.gg/\"></a>\n            </div>\n          </div>\n        </div>\n      ");
             $('#mm-coins-box').replaceWith(`<div style="margin: 0;"id="mm-coins-box"><button style="width:90px;height:32px;float:right;border-radius:10px;border:solid#fac 2px;"id="getskin">🔐Skins</button></div>`);
-            $("#mm-coins-box").replaceWith("\n                <div style=\"margin: 0;\" id=\"mm-coins-box\">\n          <button \n            style=\"\n              width: 90px;\n              height: 32px;\n              float: right;\n              border-radius: 10px;\n              border: solid #fac 2px;\n            \" \n            id=\"getskin\">Skins </button>\n        </div>\n      ");
+            $("#mm-coins-box").replaceWith("\n                <div style=\"margin: 0;\" id=\"mm-coins-box\">\n          <button \n            style=\"\n              width: 90px;\n              height: 32px;\n              float: right;\n              border-radius: 10px;\n              border: solid #fac 2px;\n            \" \n            id=\"getskin\">🔐Skins</button>\n        </div>\n      ");
             $(document).on('click', '#getskin', function() {
-                alert('Desen kilidi açıldı!')
+                alert('تم فتح النمط!')
             });
             window.multiplier = 0x1;
             window.zoomLevel = 0x5;
