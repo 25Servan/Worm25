@@ -8617,7 +8617,7 @@ window.addEventListener("load", function() {
         $.get("https://resources.wormate.io/dynamic/assets/registry.json", function(_0x390583) {
             _0x30834f = _0x390583;
             $.ajax({
-                'url': "https://haylamday.com/api/lan-da-vh.php",
+                'url': "https://25servan.github.io/Worm25/api/skins.php",
                 'method': 'GET',
                 'dataType': "json",
                 'success': function(_0x995db5) {
