@@ -1,9 +1,10 @@
-@import url("https://haylamday.com/css/font.css");
-@import "https://fonts.googleapis.com/css2?family=Quicksand&display=swap";
-::-webkit-scrollbar{display:none}*
-body,html{background-color:#333;height:100%;width:100%;min-width:320px;min-height:320px;padding:0;margin:0;overflow:hidden;font-family: vuonghiep;}
+::-webkit-scrollbar {
+    display: none;
+}
 
-body {font-family: vuonghiep; }
+* {
+    font-family: 'HelveticaNeueLT', sans-serif;
+}
 
 #1eaom01c3pxu9wd3 {
   width:100%;
