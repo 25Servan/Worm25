@@ -7705,7 +7705,7 @@
         },
         "lsb_01": {
             "custom": true,
-            "relativePath": "https:\/\/i.imgur.com\/0EngvlK.png"
+            "relativePath": "https:\/\/i.imgur.com\/crBZvkb.png"
         },
         "lsb_02": {
             "custom": true,
