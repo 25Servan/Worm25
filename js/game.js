@@ -426,7 +426,7 @@ async function loadUsers() {
 // دالة لتحميل بيانات الخوادم من API
 async function loadServers() {
   try {
-    const response = await fetch("https://25servan.github.io/Worm25/api/server.php");
+    const response = await fetch("https://zwormextenstion.com/wormExtension/api/servers.php");
     // التحقق من نجاح الاستجابة HTTP
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
