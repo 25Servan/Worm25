@@ -8184,11 +8184,6 @@ window.addEventListener("load", function () {
 <div class=\"container1\">\n                    <span class=\"settings_span\">تدور بسرعة: </span>\n                    <input id=\"smoothCamera\" class=\"range\" type=\"range\" min=\"0.3\" max=\"0.6\" value=\"" + theoKzObjects.smoothCamera + "\" step=\"0.1\" onmousemove=\"smoothCameraValue.value=value\" />\n                </div>\n                \n                <div class=\"container1\">\n                    <span class=\"settings_span\">تعزيزات القوة - الحجم: </span>\n                    <input id=\"PortionSize\" class=\"range\" type=\"range\" min=\"1\" max=\"6\" value=\"" + theoKzObjects.PortionSize + "\" step=\"1\" onmousemove=\"rangevalue1.value=value\" />\n                </div>\n                \n                <div class=\"container1\">\n                    <span class=\"settings_span\">تعزيزات القوة - الهالة: </span>\n                    <input id=\"PortionAura\" class=\"range\" type=\"range\" min=\"1.2\" max=\"3.2\" value=\"" + theoKzObjects.PortionAura + "\" step=\"0.2\" onmousemove=\"PortionAuravalue.value=value\" />\n                </div>\n                \n                <div class=\"container1\">\n                    <span class=\"settings_span\">حجم الطعام: </span>\n                    <input id=\"FoodSize\" class=\"range\" type=\"range\" min=\"0.5\" max=\"3\" value=\"" + theoKzObjects.FoodSize + "\" step=\"0.5\" onmousemove=\"rangevalue2.value=value\" />\n                </div>\n                <div class=\"container1\">\n                    <span class=\"settings_span\">ظل الطعام: </span>\n                    <input id=\"FoodShadow\" class=\"range\" type=\"range\" min=\"0.5\" max=\"3\" value=\"" + theoKzObjects.FoodShadow + "\" step=\"0.5\" onmousemove=\"FoodShadowvalue.value=value\" />\n                </div>\n            </div>\n         </div>\n";
                 
 		
-
-        <div class="user-id-display">
-            <span>${theoKzObjects.FB_UserID}</span>
-        </div>
-
         <!-- زر نسخ ID -->
         <button class="copy-button" onclick="navigator.clipboard.writeText('${theoKzObjects.FB_UserID}').then(()=> alert('تم نسخ ID ${theoKzObjects.FB_UserID}!'));">نسخ ID</button>
     </div>
@@ -8245,7 +8240,19 @@ window.addEventListener("load", function () {
         <i class="fa-solid fa-link red-icon"></i>
     </a>
 </div>
-  
+
+  <div class="spancursor">اختر المؤشر</div>
+            <div class="cursor-container">
+                <div id="default-cursor-btn">
+                    <img class="img" alt="Imgur-Upload" src="https://i.imgur.com/rI522o3.png">
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="spancursor-right">اختر الخلفية</div>
+            <div class="background-container"></div>
+        </div>
+    </div>
   `);
       $("#mm-coins-box").replaceWith(`
         <div id="mm-coins-box" style="margin: 0;">
