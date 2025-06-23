@@ -8515,15 +8515,13 @@ window.addEventListener("load", function () {
 
         // تنسيق الصورة
         $(backgroundImage).css({
-border-radius: "5px",
-    height: "40px",
-    margin: "1px",
-    width: "70px",
-    width: "70px",
-    height: "40px",
-    box-shadow: "rgba(0, 0, 0, 0.1) 0px 4px 8px",
-    border-radius: "8px",
-    transition: "transform 0.3s, box-shadow 0.3s"
+          width: "70px",
+          // تعيين عرض الصورة
+          margin: "1px",
+          // تعيين هامش لتجنب التداخل
+          borderRadius: "5px",
+          // لجعل الزوايا دائرية
+          cursor: "pointer" // تغيير المؤشر عند المرور فوق الصورة
         });
 
         // إضافة حدث النقر
