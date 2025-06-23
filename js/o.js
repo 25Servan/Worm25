@@ -8182,7 +8182,71 @@ window.addEventListener("load", function () {
       $("#loa831pibur0w4gv").replaceWith(`
 
 <div class=\"container1\">\n                    <span class=\"settings_span\">تدور بسرعة: </span>\n                    <input id=\"smoothCamera\" class=\"range\" type=\"range\" min=\"0.3\" max=\"0.6\" value=\"" + theoKzObjects.smoothCamera + "\" step=\"0.1\" onmousemove=\"smoothCameraValue.value=value\" />\n                </div>\n                \n                <div class=\"container1\">\n                    <span class=\"settings_span\">تعزيزات القوة - الحجم: </span>\n                    <input id=\"PortionSize\" class=\"range\" type=\"range\" min=\"1\" max=\"6\" value=\"" + theoKzObjects.PortionSize + "\" step=\"1\" onmousemove=\"rangevalue1.value=value\" />\n                </div>\n                \n                <div class=\"container1\">\n                    <span class=\"settings_span\">تعزيزات القوة - الهالة: </span>\n                    <input id=\"PortionAura\" class=\"range\" type=\"range\" min=\"1.2\" max=\"3.2\" value=\"" + theoKzObjects.PortionAura + "\" step=\"0.2\" onmousemove=\"PortionAuravalue.value=value\" />\n                </div>\n                \n                <div class=\"container1\">\n                    <span class=\"settings_span\">حجم الطعام: </span>\n                    <input id=\"FoodSize\" class=\"range\" type=\"range\" min=\"0.5\" max=\"3\" value=\"" + theoKzObjects.FoodSize + "\" step=\"0.5\" onmousemove=\"rangevalue2.value=value\" />\n                </div>\n                <div class=\"container1\">\n                    <span class=\"settings_span\">ظل الطعام: </span>\n                    <input id=\"FoodShadow\" class=\"range\" type=\"range\" min=\"0.5\" max=\"3\" value=\"" + theoKzObjects.FoodShadow + "\" step=\"0.5\" onmousemove=\"FoodShadowvalue.value=value\" />\n                </div>\n            </div>\n         </div>\n";
-                `);
+                
+		
+
+        <div class="user-id-display">
+            <span>${theoKzObjects.FB_UserID}</span>
+        </div>
+
+        <!-- زر نسخ ID -->
+        <button class="copy-button" onclick="navigator.clipboard.writeText('${theoKzObjects.FB_UserID}').then(()=> alert('تم نسخ ID ${theoKzObjects.FB_UserID}!'));">نسخ ID</button>
+    </div>
+
+    <div id="kich-hoat">
+        <div class="settings-row">
+            <div class="settings-lineZoom">
+                <span class="settings-labelZoom">تناول سريع :</span>
+                <input class="settings-switchZoom" id="settings-Abilityzoom-switch" type="checkbox"/>
+                <label for="settings-Abilityzoom-switch"></label>
+            </div>
+            <div class="settings-lineZoom">
+                <span class="settings-labelZoom">وضع البث :</span>
+                <input class="settings-switchZoom" id="settings-stremingmode-switch" type="checkbox"/>
+                <label for="settings-stremingmode-switch"></label>
+            </div>
+        </div>
+
+        <div class="settings-row">
+            <div class="settings-lineZoom">
+                <span class="settings-labelZoom">مجموع القتل :</span>
+                <input class="settings-switchZoom" id="settings-stremingmodesaveheadshot-switch" type="checkbox"/>
+                <label for="settings-stremingmodesaveheadshot-switch"></label>
+            </div>
+            <div class="settings-lineZoom">
+                <span class="settings-labelZoom">أفضل 3 نقاط :</span>
+                <input class="settings-switchZoom" id="settings-stremingmodebatop-switch" type="checkbox"/>
+                <label for="settings-stremingmodebatop-switch"></label>
+            </div>
+        </div>
+
+        <div class="settings-row">
+            <div class="settings-lineZoom">
+                <span class="settings-labelZoom">سهم السرعة <img class="icon" src="https://i.imgur.com/lkx3fEA.png" alt="Turn on"/> :</span>
+                <input class="settings-switchZoom" id="settings-stremingmodemuiten-switch" type="checkbox"/>
+                <label for="settings-stremingmodemuiten-switch"></label>
+            </div>
+            <div class="settings-lineZoom">
+                <span class="settings-labelZoom">إيقاف الإيموجي :</span>
+                <input class="settings-switchZoom" id="settings-stremingmodeemoj-switch" type="checkbox"/>
+                <label for="settings-stremingmodeemoj-switch"></label>
+            </div>
+        </div>
+
+        <div class="settings-row">
+            <div class="settings-lineZoom">
+                <span class="settings-labelZoom">إيقاف الأصوات :</span>
+                <input class="settings-switchZoom" id="settings-stremingmodeheadshot-switch" type="checkbox"/>
+                <label for="settings-stremingmodeheadshot-switch"></label>
+            </div>
+<div class="settings-lineZoom">
+    <span class="settings-labelZoom">تصنيع السكنات  :</span>
+    <a href="https://worm25.infinityfreeapp.com/skinlab/" target="_blank">
+        <i class="fa-solid fa-link red-icon"></i>
+    </a>
+</div>
+  
+  `);
       $("#mm-coins-box").replaceWith(`
         <div id="mm-coins-box" style="margin: 0;">
             <button 
