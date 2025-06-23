@@ -8181,32 +8181,7 @@ window.addEventListener("load", function () {
 }
       $("#loa831pibur0w4gv").replaceWith(`
 
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-                <div style="margin: 0 auto; padding: 5px; color:rgba(255, 255, 0, 0); border-radius: 8px; border: 2px solid #ffffff; max-width: 350px;" id="loa831pibur0w4gv">
-                  <div class="label" id="titleSetings" style="font-size: 18px; font-weight: bold; margin-bottom: 8px; text-align: center;">إعلان عام</div>
-                
-                
-                    <div class="list1" style="color: #ffffff;font-family: 'Verdana', sans-serif;font-size: 11px;line-height: 1.4;text-align: left;">
-                        <li style="margin-bottom: 4px;">
-                        <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
-                        <a href="https://wormatefriendsturkey.com/ios2025.zip" style="color: #ffffff; text-decoration: none; font-weight: bold;"> تنزيل ملف IOS</a>
-                        </li> 
-                        <li style="margin-bottom: 4px;">
-                        <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
-                        <a href="https://wormatefriendsturkey.com/skinlab/css/index.html" style="color: #ffffff; text-decoration: none; font-weight: bold;"> W-25 سكينلاب</a>
-                        </li>                        
-                        <li style="margin-bottom: 4px;">
-                        <i class="fa fa-link" aria-hidden="true" style="margin-right: 8px;"></i>
-                        <a href="https://discord.gg" style="color: #ffffff; text-decoration: none; font-weight: bold;">قم بإلقاء نظرة على قناة Discord الخاصة بنا</a>
-                        </li>
-                      </ul>
-                    </div>
-                      <img src="https://www.creativefabrica.com/wp-content/uploads/2019/07/Monogram-ADS-Logo-Design-by-Greenlines-Studios.jpg" width="210" height="180" align="center" alt="" style="
-    		margin-top: 13px;
-      		margin-left: 25px;
-				">
-                  </div>
-                </div>
+<div class=\"container1\">\n                    <span class=\"settings_span\">تدور بسرعة: </span>\n                    <input id=\"smoothCamera\" class=\"range\" type=\"range\" min=\"0.3\" max=\"0.6\" value=\"" + theoKzObjects.smoothCamera + "\" step=\"0.1\" onmousemove=\"smoothCameraValue.value=value\" />\n                </div>\n                \n                <div class=\"container1\">\n                    <span class=\"settings_span\">تعزيزات القوة - الحجم: </span>\n                    <input id=\"PortionSize\" class=\"range\" type=\"range\" min=\"1\" max=\"6\" value=\"" + theoKzObjects.PortionSize + "\" step=\"1\" onmousemove=\"rangevalue1.value=value\" />\n                </div>\n                \n                <div class=\"container1\">\n                    <span class=\"settings_span\">تعزيزات القوة - الهالة: </span>\n                    <input id=\"PortionAura\" class=\"range\" type=\"range\" min=\"1.2\" max=\"3.2\" value=\"" + theoKzObjects.PortionAura + "\" step=\"0.2\" onmousemove=\"PortionAuravalue.value=value\" />\n                </div>\n                \n                <div class=\"container1\">\n                    <span class=\"settings_span\">حجم الطعام: </span>\n                    <input id=\"FoodSize\" class=\"range\" type=\"range\" min=\"0.5\" max=\"3\" value=\"" + theoKzObjects.FoodSize + "\" step=\"0.5\" onmousemove=\"rangevalue2.value=value\" />\n                </div>\n                <div class=\"container1\">\n                    <span class=\"settings_span\">ظل الطعام: </span>\n                    <input id=\"FoodShadow\" class=\"range\" type=\"range\" min=\"0.5\" max=\"3\" value=\"" + theoKzObjects.FoodShadow + "\" step=\"0.5\" onmousemove=\"FoodShadowvalue.value=value\" />\n                </div>\n            </div>\n         </div>\n";
                 `);
       $("#mm-coins-box").replaceWith(`
         <div id="mm-coins-box" style="margin: 0;">
