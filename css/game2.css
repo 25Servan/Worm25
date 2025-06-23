@@ -4741,12 +4741,16 @@ i.fa.fa-solid.fa-signal {
 
 div#kich-hoat {
     padding-top: 12px;
+    font-size: 10px;
 }
 
 .copy-button {
     margin-right: 5px;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     background: #8bc34a;
+    width: 272px;
+    margin-top: 13px;
+    height: 48px;
 }
 
 .settings-row {
@@ -4755,6 +4759,7 @@ div#kich-hoat {
     margin-bottom: 2px;
     flex-wrap: wrap;
     gap: 10px;
+    font-size: 6px;
 }
 
 .settings-switchZoom {
@@ -4762,7 +4767,7 @@ div#kich-hoat {
 }
 
 .settings-lineZoom {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
     align-items: center;
     color: #000;
