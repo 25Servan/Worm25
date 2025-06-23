@@ -378,7 +378,7 @@ const ctx = {
             fontSize: 11,
             lineJoin: "round",
             stroke: "#EFFA45",
-            fontFamily: "wormdv",
+            fontFamily: "wormde",
             fontWeight: "bold"
         }),
         blanco: new PIXI.TextStyle({
@@ -389,7 +389,7 @@ const ctx = {
             stroke: "#FFF",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontFamily: "wormdv",
+            fontFamily: "wormde",
             fontWeight: "bold",
             wordWrap: !0
         }),
@@ -401,7 +401,7 @@ const ctx = {
             stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontFamily: "wormdv",
+            fontFamily: "wormde",
             fontWeight: "bold",
             wordWrap: !0
         }),
@@ -413,7 +413,7 @@ const ctx = {
             stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontFamily: "wormdv",
+            fontFamily: "wormde",
             fontWeight: "bold",
             wordWrap: !0
         }),
@@ -425,7 +425,7 @@ const ctx = {
             stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontFamily: "wormdv",
+            fontFamily: "wormde",
             fontWeight: "bold",
             wordWrap: !0
         }),
@@ -437,7 +437,7 @@ const ctx = {
             stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontFamily: "wormdv",
+            fontFamily: "wormde",
             fontWeight: "bold",
             wordWrap: !0
         }),
@@ -449,7 +449,7 @@ const ctx = {
             stroke: "#FAA845",
             strokeThickness: 1,
             whiteSpace: "normal",
-            fontFamily: "wormdv",
+            fontFamily: "wormde",
             fontWeight: "bold",
             wordWrap: !0
         }),
@@ -462,7 +462,7 @@ const ctx = {
             strokeThickness: 1,
             whiteSpace: "normal",
             fontWeight: "bold",
-            fontFamily: "wormdv",
+            fontFamily: "wormde",
             wordWrap: !0
         })
     }
@@ -898,7 +898,7 @@ window.addEventListener("load", function() {
             lineJoin: "round",
             whiteSpace: "normal",
             wordWrap: !0,
-            fontFamily: "wormdv",
+            fontFamily: "wormde",
             fontWeight: "bold"
         })
           , c = "pwr_clock" + e;
@@ -2585,7 +2585,7 @@ window.addEventListener("load", function() {
             var s = _0x5d5d99(_0x53baca.fc, function(t, e, i, n, s, o, r) {
                 _0x53baca.fc.call(this, t, {
                     fill: e,
-                    fontFamily: "wormdv",
+                    fontFamily: "wormde",
                     fontSize: 36,
                     fontWeight: "bold"
                 }),
@@ -2959,7 +2959,7 @@ window.addEventListener("load", function() {
             o = ((s = _0x5d5d99(_0x53baca.Zb, function() {
                 _0x53baca.Zb.call(this),
                 this.eg = new _0x53baca.fc("",{
-                    fontFamily: "wormdv",
+                    fontFamily: "wormde",
                     fontSize: 11,
                     fill: "white",
                     fontWeight: "bold"
@@ -2968,7 +2968,7 @@ window.addEventListener("load", function() {
                 this.eg.position.x = -5,
                 this.addChild(this.eg),
                 this.fg = new _0x53baca.fc("",{
-                    fontFamily: "wormdv",
+                    fontFamily: "wormde",
                     fontSize: 11,
                     fill: "white",
                     fontWeight: "bold"
@@ -2977,7 +2977,7 @@ window.addEventListener("load", function() {
                 this.fg.position.x = 4,
                 this.addChild(this.fg),
                 this.gg = new _0x53baca.fc("",{
-                    fontFamily: "wormdv",
+                    fontFamily: "wormde",
                     fontSize: 11,
                     fill: "white",
                     fontWeight: "bold"
