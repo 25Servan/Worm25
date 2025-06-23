@@ -4879,16 +4879,16 @@ div#kich-hoat {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .cursor-container img,
 #default-cursor-btn img {
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     height: auto;
-    margin: 2%;
-    width: 9%;
+    /* margin: 3%; */
+    /* width: 10%; */
 }
 
 button#buy-premium {
@@ -4974,17 +4974,21 @@ button#buy-premium {
 }
 
 .background-container {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
     justify-items: stretch;
     grid-template-rows: repeat(2, auto);
-    gap: 40px;
-    padding: 5px;
-    justify-content: start;
-    align-items: end;
+    gap: 3px;
+    /* padding: 5px; */
+    /* justify-content: start; */
+    /* align-items: end; */
     align-content: space-around;
-    height: 131px;
-    margin-left: 8px;
+    height: 126px;
+    margin-left: 16px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin-top: -34px;
+    width: 137px;
 }
 
 .background-container img {
