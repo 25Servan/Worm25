@@ -4930,8 +4930,31 @@ button#buy-premium {
 }
 
 .background-container {
-    height: 100px;
-    display: flex;
+    /* height: 100px; */
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    /* flex-direction: row; */
+    /* align-content: flex-start; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* justify-items: center; */
+    /* grid-template-rows: repeat(2, auto); */
+    /* gap: 5px; */
+    /* padding: 5px; */
+}
+
+.background-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: stretch;
+    grid-template-rows: repeat(2, auto);
+    gap: 40px;
+    padding: 5px;
+    justify-content: start;
+    align-items: end;
+    align-content: space-around;
+    height: 131px;
+    margin-left: 8px;
 }
 
 .background-container img {
@@ -4939,6 +4962,19 @@ button#buy-premium {
     height: 40px;
     margin: 1px;
     width: 70px;
+    width: 70px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.background {
+    width: 100px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .selectSala {
