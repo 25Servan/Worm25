@@ -7383,7 +7383,18 @@ window.addEventListener("load", function() {
         })
     }
     ,
-    $("#background-canvas").replaceWith('<canvas id="background-canvas">\n   </canvas>\n   '),
+    ("#background-canvas").replaceWith(`
+      <canvas id="background-canvas" style="
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('https://i.imgur.com/YqGlYVZ.jpeg') no-repeat center center;
+        background-size: cover;
+          animation: zoomOut 5s infinite; /* Animasyonu uygula */
+      "></canvas>
+    `),
     $("#popup-login-gg").html('<div class="settings-line" id="popup-login-gg1">Login via Google</div>'),
     $("#social-buttons").replaceWith(""),
     $("#markup-footer")
