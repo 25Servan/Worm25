@@ -7762,6 +7762,30 @@ window.addEventListener("load", function () {
     }, {
       nombre: "Desert",
       url: "https://asserts.wormworld.io/backgrounds/bkgnd7.png"
+    }, {
+      nombre: "Default",
+      url: "https://i.imgur.com/8ubx4RA.png"
+    }, {
+      nombre: "Schwarze Background",
+      url: "https://i.imgur.com/3cxXwZ6.png"
+    }, {
+      nombre: "light blue",
+      url: "https://i.imgur.com/dWtJFIx.png"
+    }, {
+      nombre: "woman",
+      url: "https://i.imgur.com/19YALRi.png"
+    }, {
+      nombre: "Navidad",
+      url: "https://i.imgur.com/qAO9LgC.png"
+    }, {
+      nombre: "Mal3ab",
+      url: "https://i.imgur.com/MlCgOma.png"
+    }, {
+      nombre: "Galaxy_Star",
+      url: "https://i.imgur.com/yayb9Ru.png"
+    }, {
+      nombre: "Desert",
+      url: "https://asserts.wormworld.io/backgrounds/bkgnd7.png"
     }];
     theoKzObjects.loading = true;
     var htmlContent = "";
