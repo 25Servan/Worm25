@@ -8515,11 +8515,11 @@ window.addEventListener("load", function () {
 
         // تنسيق الصورة
         $(backgroundImage).css({
-          width: "0%",
+          width: "23%",
           // تعيين عرض الصورة
-          margin: "0%",
+          margin: "1%",
           // تعيين هامش لتجنب التداخل
-          borderRadius: "0px",
+          borderRadius: "5px",
           // لجعل الزوايا دائرية
           cursor: "pointer" // تغيير المؤشر عند المرور فوق الصورة
         });
