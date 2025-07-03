@@ -31,7 +31,7 @@
         },
         {
             "id": 2,
-            "name": "<div id='svhiep'> <div class='ten'>Worm25 NEW</div> <div class='valu'>Map: DE_2</div> <div class='online'>ON</div> <div class='img-team'> <img src='https://25servan.github.io/Worm25/images/icon.png'/> </div> </div>",
+            "name": "<div id='svhiep'> <div class='ten'>25 YT</div> <div class='valu'>Map: DE_2</div> <div class='online'>ON</div> <div class='img-team'> <img src='https://i.imgur.com/4N6UiFi.png'/> </div> </div>",
             "region": "peru",
             "serverUrl": "wss://fra-c.wormate.io:32609/wormy",
             "status": 1
